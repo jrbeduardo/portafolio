@@ -24,7 +24,7 @@ export const Contact = () => {
           </div>
           <div data-aos="slide-left">
             <p className="font-semibold text-2xl">
-              Se prefieres puedes descargar mi curriculum.
+              Si prefieres puedes descargar mi curriculum.
             </p>
             <a href="https://drive.google.com/file/d/1s99GQpOPuuzaHB8D_85czUrPSnUTdgqn/view?usp=sharing" download="CV_eduardo.pdf">
               <button className='bg-tomato rounded text-white px-5 py-1 mb-5 mt-5 text-xl'>
