@@ -44,7 +44,7 @@ export const Home = () => {
             <p className='text-2xl md:text-xl my-5'>
               Desde que me gradue he impartido clases en distintas instituciones educativas.
             </p>
-            <p className='text-2xl md:text-xl my-10'>
+            <p className='text-2xl md:text-xl my-2'>
               Pero también disfruto y me apasiona la programación 💚. Estoy más orientado al Backend, pero también hago Frontend.
             </p>
         </div>
