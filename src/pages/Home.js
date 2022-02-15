@@ -37,7 +37,7 @@ export const Home = () => {
 
           {/* about */}  
           <div className='h-screen text-2xl font-raleway flex flex-col justify-center mx-24 md:mx-2.5 md:mt-10'>
-            <h2 className='text-4xl text-center font-bold my-10' data-aos='slide-right'>¿Quién es Soy?</h2>
+            <h2 className='text-3xl text-center font-bold my-10' data-aos='slide-right'>¿Quién Soy?</h2>
             <p className='text-2xl md:text-xl my-5'>
               Estudié Matemáticas en la Universidad Nacional Autónoma de México (UNAM). Tengo la licenciatura y la maestría 🎓.
             </p>
