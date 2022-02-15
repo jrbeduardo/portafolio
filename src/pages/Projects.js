@@ -26,10 +26,10 @@ export const Projects = () => {
               loop  
               autoplay></lottie-player>
          </div>
-         <p className='text-xl md:text-lg font-semibold text-center mt-5' >
+         <p className='text-xl md:text-xl  text-center mt-5' >
          Profesionalmente no me comprometo a trabajar en más proyectos de los que pueda contar con mi mano 🖐🏻, ...
         </p>
-        <p className='text-2xl  md:text-lg text-center font-bold mt-5'>
+        <p className='text-2xl  md:text-xl text-center font-bold mt-5'>
           PORQUE ME PERMITE, ...
         </p>
        
@@ -43,15 +43,16 @@ export const Projects = () => {
     <div className='grid mt-20 md:grid-cols-1 grid-cols-3 items-center justify-center gap-10 mx-20 md:mx-5'>
       {projectsData.map(project => 
       <div key={project.title}>
-        <div className='relative p-10 border-2 text-center rounded-bl-3xl rounded-tr-3xl border-gray-400'>
+        <div className='relative p-2 border-2 text-center rounded-bl-3xl rounded-tr-3xl border-gray-400 grid grid-cols-1 divide-y'>
           <img 
-            className='w-full h-52'
+            className='w-full'
             src={project.image} 
             alt={project.title}
             ></img>
-
-            <div className='absolute inset-0 flex flex-col items-center justify-center opacity-0 bg-black hover:opacity-80'>
-              <h1 className='text-4xl text-white font-semibold'>{project.title}</h1>
+            <hr ></hr>
+            <p className="h-2/5">{project.description}</p>
+            <div className='absolute inset-0 flex flex-col items-center justify-center opacity-0 bg-black hover:opacity-80 rounded-bl-3xl rounded-tr-3xl'>
+              <h1 className='text-2xl text-white font-semibold'>{project.title}</h1>
               <button onClick={()=>{
                 window.open(project.link, '_blank');
               }} className='border-2  text-white rounded border-white py-2 px-5 hover:bg-green-500 font-bold mt-5'>VER</button>

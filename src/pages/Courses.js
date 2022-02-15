@@ -31,10 +31,10 @@ export const Courses = () => {
        </div>
     </div>
     <div className='mt-32 md:mt-5'>
-        <p className='text-xl md:text-lg font-semibold text-center mt-5'>
+        <p className='text-xl md:text-xl text-center mt-5'>
         Como profesor tengo  experiencia en universidades públicas y educación en línea, ...
         </p>
-        <p className='text-2xl  md:text-lg text-center font-bold mt-5'>
+        <p className='text-2xl  md:text-2xl text-center font-bold mt-5'>
           PORQUE, ...
         </p>
         <div className='font-bold text-center bg-gray-500 mx-5 p-20 text-white rounded-tl-full rounded-br-full mt-5'>
