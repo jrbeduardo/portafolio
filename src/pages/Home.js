@@ -27,8 +27,8 @@ export const Home = () => {
             <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_q7uarxsb.json"  background="transparent"  speed="1"    loop autoplay></lottie-player>            
             </div>
             <div className='font-bold text-white md:px-5'>
-              <h1 className='text-5xl md:text-3xl' data-aos='slide-right'>Hola, soy <b className='text-yellow-500'> José Eduardo</b></h1>
-              <h2 className='text-3xl md:text-xl' data-aos='slide-left'>Matemático y <b className='text-red-500'>Programador</b></h2>
+              <h1 className='text-5xl md:text-4xl' data-aos='slide-right'>Hola, soy <b className='text-yellow-500'> José Eduardo</b></h1>
+              <h2 className='text-3xl md:text-2xl' data-aos='slide-left'>Matemático y <b className='text-red-500'>Programador</b></h2>
             </div>
 
           </div>
@@ -36,18 +36,18 @@ export const Home = () => {
         </div>
 
           {/* about */}  
-          <div className='h-screen text-2xl font-raleway flex flex-col justify-center mx-24'>
+          <div className='h-screen text-2xl font-raleway flex flex-col justify-center mx-24 md:mt-72'>
             <h2 className='text-4xl text-center font-bold my-10' data-aos='slide-right'>¿Quién es Soy?</h2>
-            <p className='text-2xl md:text-lg my-5'>
+            <p className='text-2xl md:text-xl my-5'>
               Estudié Matemáticas en la Universidad Nacional Autónoma de México (UNAM). Tengo la licenciatura y la maestría.
             </p>
-            <p className='text-2xl md:text-lg my-5'>
+            <p className='text-2xl md:text-xl my-5'>
               Desde que me gradue he impartido clases en distintas instituciones educativas.
             </p>
-            <p className='text-2xl md:text-lg my-5'>
+            <p className='text-2xl md:text-xl my-5'>
               Pero también disfruto y me apasiona la programación por lo que estoy estudiando la licenciatura en Ingeniería en Computación en la UNAM. 
             </p>
-            <p className='text-2xl md:text-lg'>
+            <p className='text-2xl md:text-xl'>
               Estoy más orientado al Backend, pero también hago Frontend.
             </p>
         </div>
@@ -89,7 +89,7 @@ export const Home = () => {
             <div className='h-96'>
             <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_2znxgjyt.json"  background="transparent"  speed="1"   loop autoplay></lottie-player>
             </div>
-            <p className='text-2xl my-5  md:px-5 px-14 py-10'>
+            <p className='text-2xl my-5 md:text-xl md:px-5 px-14 py-10'>
               Python es un lenguaje de programación de alto nivel que se utiliza para desarrollar aplicaciones de todo tipo. Se trata de un lenguaje multiplataforma de código abierto y, por lo tanto, gratuito, lo que permite desarrollar software sin límites.
             </p>      
           </div>

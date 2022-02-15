@@ -4,7 +4,6 @@ import { Projects } from './pages/Projects';
 import { Contact } from './pages/Contact';
 import { Courses } from './pages/Courses';
 import { Layout } from './components/Layout';
-import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
 
