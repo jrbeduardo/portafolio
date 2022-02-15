@@ -36,7 +36,7 @@ export const Home = () => {
         </div>
 
           {/* about */}  
-          <div className='h-screen text-2xl font-raleway flex flex-col justify-center mx-24 md:mt-72'>
+          <div className='h-screen text-2xl font-raleway flex flex-col justify-center mx-24 md:mx-2.5 md:mt-10'>
             <h2 className='text-4xl text-center font-bold my-10' data-aos='slide-right'>¿Quién es Soy?</h2>
             <p className='text-2xl md:text-xl my-5'>
               Estudié Matemáticas en la Universidad Nacional Autónoma de México (UNAM). Tengo la licenciatura y la maestría 🎓.
@@ -44,7 +44,7 @@ export const Home = () => {
             <p className='text-2xl md:text-xl my-5'>
               Desde que me gradue he impartido clases en distintas instituciones educativas.
             </p>
-            <p className='text-2xl md:text-xl my-5'>
+            <p className='text-2xl md:text-xl my-10'>
               Pero también disfruto y me apasiona la programación 💚. Estoy más orientado al Backend, pero también hago Frontend.
             </p>
         </div>
