@@ -24,7 +24,7 @@ export const Header = () => {
     },
   ];
   return (
-    <div className="text-white font-raleway sticky left-0 top-0 z-50">
+    <div className="text-white font-raleway  text-xl font-semibold sticky left-0 top-0 z-50">
       <div
         className={
           showMenu === "md:hidden"
@@ -33,7 +33,7 @@ export const Header = () => {
         }
       >
         <div className="flex justify-between items-baseline w-full">
-          <h1 className="text-2xl font-semibold shadow-gray-600 hover:text-limon cursor-pointer"> 
+          <h1 className="font-bold shadow-gray-600 text-2xl cursor-pointer"> 
           <Link to="/"> 🟢jrbeduardo</Link>
           </h1>
           <button

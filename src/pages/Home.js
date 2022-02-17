@@ -36,22 +36,30 @@ export const Home = () => {
         </div>
 
           {/* about */}  
-          <div className='h-screen text-2xl font-raleway flex flex-col justify-center mx-24 md:mx-2.5 md:mt-10'>
-            <h2 className='text-3xl text-center font-bold my-10' data-aos='slide-right'>¿Quién Soy?</h2>
-            <p className='text-2xl md:text-xl my-5'>
+          <div className='h-screen text-2xl font-raleway flex flex-col justify-center mx-40 md:mx-2.5 md:mt-10'>
+            <h2 className='text-4xl text-center font-bold my-10' data-aos='slide-right'>¿Quién Soy?</h2>
+            <p className='text-3xl md:text-xl my-5'>
               Estudié Matemáticas en la Universidad Nacional Autónoma de México (UNAM). Tengo la licenciatura y la maestría 🎓.
             </p>
-            <p className='text-2xl md:text-xl my-5'>
+            <p className='text-3xl md:text-xl my-5'>
               Desde que me gradue he impartido clases en distintas instituciones educativas.
             </p>
-            <p className='text-2xl md:text-xl my-2'>
-              Pero también disfruto y me apasiona la programación 💚. Estoy más orientado al Backend, pero también hago Frontend.
+            <p className='text-3xl md:text-xl my-5'>
+              Pero también disfruto y me apasiona la programación 💚.
             </p>
+            <p className='text-3xl md:text-xl my-5'>
+              En el desarrollo web 💻, estoy más orientado al Backend, pero también hago Frontend. También me gusta el análisis de datos 📄 y la inteligencia artificial 🤖.
+            </p>
+
+            <p className='text-3xl md:text-xl my-5'>
+              Eterno Autodidacta.
+            </p>
+
         </div>
       
         {/* Languages */}
         <div>
-        <h2 className='text-3xl font-bold text-center mb-5' data-aos='slide-left'>Lenguajes que manejo</h2>
+        <h2 className='text-4xl font-bold text-center mb-5' data-aos='slide-right'>Lenguajes que manejo</h2>
           <div className='grid md:grid-cols-1 grid-cols-4'>
             <FaJava size={180} color="orange" className='w-full text-center mt-10'/>
             <FaPython size={180} color="#048bb1" className='w-full text-center mt-10 '/>
@@ -61,7 +69,7 @@ export const Home = () => {
         </div>
         {/* tecnologias */}
         <div>
-          <h2 className='text-3xl font-bold text-center my-10' data-aos='slide-right'>Herramientas que uso</h2>
+          <h2 className='text-4xl font-bold text-center my-10' data-aos='slide-right'>Herramientas que uso</h2>
           <div className='grid md:grid-cols-2 grid-cols-6'>
             <FaReact size={160} color="#01c5f7" className='w-full text-center mt-10 animate-spin'/>
             <DiDjango size={160} color="#103c2d" className='w-full text-center mt-10'/>

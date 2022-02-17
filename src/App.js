@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
+import {HashRouter, Routes, Route, Navigate} from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Projects } from './pages/Projects';
 import { Contact } from './pages/Contact';
@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 
 function App() {
   return (
-      <Router>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Layout/>}>
             <Route index element={<Home/>}/>
@@ -20,7 +20,7 @@ function App() {
             <Route path="*" element={<Navigate to="/"/>}/>
           </Route>
         </Routes>
-      </Router>
+      </HashRouter>
   );
 }
 

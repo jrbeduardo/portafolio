@@ -7,7 +7,11 @@ module.exports = {
       colors: {
         theme: '#2a2a2a',
         tomato: '#ff6347',
-        limon: '#68a042'
+        limon: '#68a042',
+        myyellow: '#dc9032',
+        cafe: '#9e7a58'
+
+
       },
       fontFamily: {
         raleway: ['Raleway', 'sans-serif']
