@@ -45,12 +45,12 @@ export const Home = () => {
               Hola, soy <b className="text-yellow-500 ">José Eduardo</b>
             </h1>
 
-            <h2 className="text-3xl md:text-3xl text-red-500">
+            <h2 className="text-4xl md:text-3xl text-red-500">
               <TypewriterComponent
                 options={{
                   strings: [
                     "Matemático",
-                    "e<sup> i π</sup> = - 1",
+                    "e<sup> i π</sup> + 1 = 0",
                     "Programador",
                     '<code>print("hola Mundo")</code>',
                   ],
@@ -88,7 +88,7 @@ export const Home = () => {
           inteligencia artificial 🤖.
         </p>
 
-        <p className="text-3xl md:text-2xl my-5">Eterno Autodidacta.</p>
+        <p className="text-3xl md:text-2xl my-5">Eterno Autodidacta 🙌 😄.</p>
       </div>
 
       {/* Languages */}

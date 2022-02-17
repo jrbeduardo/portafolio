@@ -11,7 +11,7 @@ export const Courses = () => {
         <div className="h-screen relative">
           <div className="h-3/4 pt-20 bg-theme">
             <lottie-player
-              src="https://assets4.lottiefiles.com/packages/lf20_zpymeot9.json" 
+              src="https://assets8.lottiefiles.com/packages/lf20_xhfwgplf.json" 
               background="transparent"
               speed="1"
               loop
