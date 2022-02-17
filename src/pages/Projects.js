@@ -1,20 +1,11 @@
-import { useEffect } from "react";
 import { projectsData } from '../resources/projects'
 import AOS from 'aos';
+import { useScroll } from "../hooks/useScroll";
 AOS.init({
   duration: 1000
 });
-
 export const Projects = () => {
-  useEffect(() => {
-    try {
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth',
-      });
-    } catch (error) {}
-  }, []);
+  useScroll();
   return (
     <>
       <div>
@@ -26,11 +17,11 @@ export const Projects = () => {
               loop  
               autoplay></lottie-player>
          </div>
-         <p className='text-3xl md:text-xl  text-center mt-5' >
-         Profesionalmente no me comprometo a trabajar en más proyectos de los que pueda contar con mi mano 🖐🏻, ...
+         <p className='text-3xl md:text-xl  text-center mt-5 mb-10 mb-5' >
+         Profesionalmente no me comprometo a trabajar en más proyectos de los que pueda contar con mi mano 🖐🏻
         </p>
         <p className='text-4xl  md:text-2xl text-center font-bold mt-5'>
-          PORQUE me premite...
+          PORQUE me premite . . .
         </p>
        
        </div>

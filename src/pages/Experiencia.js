@@ -3,8 +3,11 @@ import { MdSchool } from 'react-icons/md';
 import { SiPowerbi } from 'react-icons/si';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { useScroll } from '../hooks/useScroll';
+
 
 export const Experiencia = () => {
+  useScroll();
   return (
     <VerticalTimeline>
         <VerticalTimelineElement

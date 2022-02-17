@@ -3,6 +3,14 @@ html{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+.leaflet-container {
+    width: 80%;
+    height: 80vh;
+    margin: 3rem;
+    z-index: 0;
+    border-radius: 15px;
+    border: thick solid #2a2a2a10;
+  }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

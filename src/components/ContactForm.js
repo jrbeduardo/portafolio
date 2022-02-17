@@ -44,8 +44,8 @@ export const ContactForm = () => {
         = useForm(initialForm, validationsForm);
     return (
           <div className='w-screen flex flex-col font-raleway justify-center items-center'>
-            <div className='md:w-full w-1/2 p-10 shadow-xl bg-gray-50'>
-            <h2 className='text-4xl  text-center font-semibold'>Escríbeme 📭</h2>
+            <div className='md:w-full w-3/5 p-10 shadow-xl bg-gray-50'>
+            <h2 className='text-4xl text-center font-semibold'>Escríbeme 📭</h2>
             <form onSubmit={handleSubmit}>
                 <input 
                     className='w-full border-2 border-gray-600 rounded py-1 shadow-lg mt-5'

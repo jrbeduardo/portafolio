@@ -2,31 +2,11 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
+import { menuItems } from "../resources/menuItems";
 
 export const Header = () => {
   const [showMenu, setShowMenu] = useState("md:hidden");
-  const menuItems = [
-    {
-      title: "Inicio",
-      key: "/",
-    },
-    {
-      title: "Proyectos",
-      key: "/proyectos",
-    },
-    {
-      title: "Cursos",
-      key: "/cursos",
-    },
-    {
-      title: "Experiencia",
-      key: "/experiencia",
-    },
-    {
-      title: "Contacto",
-      key: "/contacto",
-    },
-  ];
+  
   return (
     <div className="text-white bg-tomato font-raleway  text-xl font-semibold sticky left-0 top-0 z-50">
       <div
@@ -59,7 +39,7 @@ export const Header = () => {
           {menuItems.map((item) => (
             <li className="list-none mx-2" key={item.key}>
               <NavLink
-                className="rounded-lg  hover:bg-limon"
+                className="rounded-lg text-lg hover:bg-limon"
                 style={({ isActive }) => {
                   return {
                     backgroundColor: isActive ? "#68a042" : "",

@@ -1,24 +1,16 @@
-
-import { useEffect } from "react";
 import { FaDocker, FaFlask, FaGithub, FaHtml5, FaJava, FaNodeJs, FaPhp, FaPython, FaReact, FaUbuntu } from 'react-icons/fa';
 import { DiDjango } from 'react-icons/di';
 import { SiJavascript, SiMongodb, SiPostgresql, SiTailwindcss } from 'react-icons/si';
 import AOS from 'aos';
 import TypewriterComponent from "typewriter-effect";
+import { useScroll } from "../hooks/useScroll";
 AOS.init({
   duration: 1000
 });
 
+
 export const Home = () => {
-  useEffect(() => {
-    try {
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth',
-      });
-    } catch (error) {}
-  }, []);
+  useScroll();
   return (    
       <div>
         {/* intro section */}

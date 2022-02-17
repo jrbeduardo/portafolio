@@ -1,17 +1,10 @@
 import { coursesData } from "../resources/courses";
-import { useEffect } from "react";
+import { useScroll } from "../hooks/useScroll";
 import TypewriterComponent from "typewriter-effect";
 
+
 export const Courses = () => {
-  useEffect(() => {
-    try {
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
-    } catch (error) {}
-  }, []);
+  useScroll();
   return (
     <>
       <div>
@@ -38,16 +31,16 @@ export const Courses = () => {
       <div className="mt-32 md:mt-5 md:mx-2.5 mx-32">
         <p className="text-3xl md:text-xl text-center mt-5">
           Como profesor tengo experiencia en universidades públicas y educación
-          en línea, ...
+          en línea
         </p>
         <p className="text-4xl  md:text-2xl text-center font-bold mt-5">
-          PORQUE ...
+          PORQUE . . .
         </p>
         <div className="font-bold text-center bg-gray-500 mx-5 p-20 text-white rounded-tl-full rounded-br-full mt-5">
           <h2 className="text-4xl md:text-2xl">
           <TypewriterComponent
                 options={{
-                  strings: ['La educación 🧑‍🏫 nos ayuda a ver el significado de la vida', 'El principio de la educación es predicar con el ejemplo'],
+                  strings: ['La educación nos ayuda a ver el significado de la vida', 'El principio de la educación es predicar con el ejemplo'],
                   autoStart: true,
                   loop: true,
                 }}

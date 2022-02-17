@@ -1,24 +1,14 @@
-import { useEffect } from "react";
 import { ContactForm } from "../components/ContactForm";
-import AOS from 'aos';
 import TypewriterComponent from "typewriter-effect";
-AOS.init({
-  duration: 1000
-});
+import { useScroll } from "../hooks/useScroll";
+import { MapView } from "../components/MapView";
+
+
 export const Contact = () => {
-  useEffect(() => {
-    try {
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth',
-      });
-    } catch (error) {}
-  }, []);
+  useScroll();
   return (
     <div>
-        
-        <div className='bg-theme flex items-center md:flex-col justify-evenly h-screen text-white'>
+        <div className='bg-theme flex items-center md:flex-col justify-center h-screen text-white'>
           
           <div className='h-4/5 md:h-3/5'>
           <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_abqysclq.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
@@ -28,7 +18,7 @@ export const Contact = () => {
             <TypewriterComponent
                 options={{
                   strings: ['Si prefieres puedes descargar mi curriculum.',
-                '. . . o bien llena el formulario de más abajo ⬇️'],
+                '. . . o bien llena el formulario de más abajo'],
                   autoStart: true,
                   loop: true,
                 }}
@@ -42,12 +32,10 @@ export const Contact = () => {
             </a>  
           </div>
         </div>
-        <div className="mt-10">
+        <div className="mt-10 flex items-center md:flex-col justify-evenly">
           <ContactForm/>
-        </div>
-        
-        
-        
+          <MapView/>
+        </div>        
     </div>
   )
 }
