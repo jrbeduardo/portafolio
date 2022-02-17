@@ -18,16 +18,16 @@ export const Footer = () => {
             <p className='text-2xl text-white pb-2'>Made with ❤️ By</p>
             <div className="h-1 border-2 border-white border-dotted my-3"></div>
             <div className='flex text-2xl text-white w-full justify-evenly'>
-              <FaFacebook className="cursor-pointer" onClick={()=>{
+              <FaFacebook size={30} className="cursor-pointer" onClick={()=>{
                 window.open("https://www.facebook.com/profile.php?id=100040393116170", '_blank');
               }}/>
-              <Link to="contacto"><SiGmail/></Link>
+              <Link to="contacto"><SiGmail size={30}/></Link>
         
-              <FaTwitterSquare className="cursor-pointer" onClick={()=>{
+              <FaTwitterSquare size={30} className="cursor-pointer" onClick={()=>{
                 window.open("https://twitter.com/jrbeduardo", '_blank');
               }}/>
               
-              <FaGithub className="cursor-pointer" onClick={()=>{
+              <FaGithub size={30} className="cursor-pointer" onClick={()=>{
                 window.open("https://github.com/jrbeduardo", '_blank');
               }}/>
              

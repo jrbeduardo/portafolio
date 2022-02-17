@@ -10,7 +10,7 @@ export const Experiencia = () => {
         <VerticalTimelineElement
             className="font-bold vertical-timeline-element--work"
             date="1/09/2021 - 29/10/2021"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            iconStyle={{ background: 'rgb(234, 195, 16)', color: '#fff' }}
             icon={<SiPowerbi/>}
         >
             <h3 className="vertical-timeline-element-title">Becario Digitalent</h3>
@@ -21,7 +21,7 @@ export const Experiencia = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
             className="font-bold vertical-timeline-element--work"
-            date="2006 - 2008"
+            date="5/04/2021 -1/06/2021"
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={<FaPython/>}
         >

@@ -127,23 +127,23 @@ export const Home = () => {
               <div className='text-left'>
                 <h2 className='text-xl font-bold'>FrontEnd</h2>
                 <hr></hr>
-                <p className='font-semibold mt-2'>HTML/CSS</p>
-                <p className='font-semibold mt-2'>REACT</p>
-                <p className='font-semibold mt-2'>JavaScript</p>
+                <p className='mt-2'>HTML/CSS</p>
+                <p className='mt-2'>React</p>
+                <p className='mt-2'>JavaScript</p>
               </div>
               <div className='text-center'>
                 <h2 className='text-xl font-bold'>UI / UX</h2>
                 <hr></hr>
-                <p className='font-semibold mt-2'>Tailwind</p>
-                <p className='font-semibold mt-2'>Bootstrap</p>
+                <p className='mt-2'>Tailwind</p>
+                <p className='mt-2'>Bootstrap</p>
               </div>
               <div className='text-right'>
                 <h2 className='text-xl font-bold'>BackEnd and DB</h2>
                 <hr></hr>
-                <p className='font-semibold mt-2'>Node JS</p>
-                <p className='font-semibold mt-2'>Python</p>
-                <p className='font-semibold mt-2'>MongoDB</p>
-                <p className='font-semibold mt-2'>Oracle</p>
+                <p className='mt-2'>Node JS</p>
+                <p className='mt-2'>Python</p>
+                <p className='mt-2'>MongoDB</p>
+                <p className='mt-2'>Oracle</p>
               </div>
             
             </div>      
