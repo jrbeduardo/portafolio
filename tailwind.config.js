@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       colors: {
         theme: '#2a2a2a',
-        tomato: '#ff6347',
+        tomato: '#fe5550',
         limon: '#68a042',
         myyellow: '#dc9032',
         cafe: '#9e7a58',
