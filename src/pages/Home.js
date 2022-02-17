@@ -14,7 +14,7 @@ export const Home = () => {
   return (    
       <div>
         {/* intro section */}
-        <div className='h-fit bg-theme'>
+        <div className='h-screen bg-theme'>
           <div className='flex md:flex-col   justify-evenly h-screen items-center border-4 border-white rotate-12  mx-10 bg-theme md:rotate-0 md:border-0'>
             <div className='h-3/5'>
             <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_q7uarxsb.json"  background="transparent"  speed="1"    loop autoplay></lottie-player>            
