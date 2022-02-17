@@ -10,11 +10,11 @@ export const Contact = () => {
     <div>
         <div className='bg-theme flex items-center flex-col justify-center h-screen text-white'>
           
-          <div className='h-3/5 md:h-4/5'>
+          <div className='h-3/5 md:h-3/5'>
           <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_abqysclq.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
           </div>
           <div className="text-center">
-            <p className="font-semibold md:text-2xl text-4xl md:my-2">
+            <p className="font-semibold md:text-2xl text-4xl ">
             <TypewriterComponent
                 options={{
                   strings: ['Si prefieres puedes descargar mi curriculum.',
