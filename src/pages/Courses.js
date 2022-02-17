@@ -34,7 +34,7 @@ export const Courses = () => {
           </div>
         </div>
       </div>
-      <div className="mt-32 md:mt-5 mx-40">
+      <div className="mt-32 md:mt-5 md:mx-2.5 mx-40">
         <p className="text-3xl md:text-xl text-center mt-5">
           Como profesor tengo experiencia en universidades públicas y educación
           en línea, ...

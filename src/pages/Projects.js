@@ -18,7 +18,7 @@ export const Projects = () => {
   return (
     <>
       <div>
-       <div className='h-screen md:mb-10 mx-40'>
+       <div className='h-screen md:mb-10 md:mx-2.5 mx-40'>
          <div className='h-3/4'>
             <lottie-player 
               src="https://assets8.lottiefiles.com/packages/lf20_ygiuluqn.json"  background="transparent"  
@@ -29,15 +29,15 @@ export const Projects = () => {
          <p className='text-3xl md:text-xl  text-center mt-5' >
          Profesionalmente no me comprometo a trabajar en más proyectos de los que pueda contar con mi mano 🖐🏻, ...
         </p>
-        <p className='text-4xl  md:text-xl text-center font-bold mt-5'>
+        <p className='text-4xl  md:text-2xl text-center font-bold mt-5'>
           PORQUE me premite...
         </p>
        
        </div>
        <div className='font-bold text-center bg-limon mx-5 p-20 text-white rounded-tl-full rounded-br-full'>
-         <h2 className='text-4xl md:text-xl' data-aos="slide-right">estar enfocado y administrar ...</h2>
+         <h2 className='text-4xl md:text-2xl' data-aos="slide-right">estar enfocado y administrar ...</h2>
 
-         <h2 className='text-4xl md:text-xl'data-aos="slide-left"> mi tiempo y energía.</h2>
+         <h2 className='text-4xl md:text-2xl'data-aos="slide-left"> mi tiempo y energía.</h2>
        </div>
     </div>
     <div className='grid mt-20 md:grid-cols-1 grid-cols-3 items-center justify-center gap-10 mx-20 md:mx-5'>
