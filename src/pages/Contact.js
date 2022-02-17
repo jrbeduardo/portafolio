@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { ContactForm } from "../components/ContactForm";
 import AOS from 'aos';
+import TypewriterComponent from "typewriter-effect";
 AOS.init({
   duration: 1000
 });
@@ -24,10 +25,18 @@ export const Contact = () => {
           </div>
           <div className="text-center">
             <p className="font-semibold md:text-2xl text-4xl md:my-2">
-              Si prefieres puedes descargar mi curriculum.
+            <TypewriterComponent
+                options={{
+                  strings: ['Si prefieres puedes descargar mi curriculum.',
+                '... o llena el formulario de más abajo ⬇️'],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+              
             </p>
             <a href="https://drive.google.com/file/d/1s99GQpOPuuzaHB8D_85czUrPSnUTdgqn/view?usp=sharing" download="CV_eduardo.pdf">
-              <button className='bg-tomato text-2xl rounded text-white px-5 py-1 mb-5 mt-5 text-xl'>
+              <button className='bg-azul text-2xl rounded text-white px-5 py-1 mb-5 mt-5 text-xl'>
                 descarga mi CV
               </button>
             </a>  

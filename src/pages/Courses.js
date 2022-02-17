@@ -1,5 +1,6 @@
 import { coursesData } from "../resources/courses";
 import { useEffect } from "react";
+import TypewriterComponent from "typewriter-effect";
 
 export const Courses = () => {
   useEffect(() => {
@@ -34,7 +35,7 @@ export const Courses = () => {
           </div>
         </div>
       </div>
-      <div className="mt-32 md:mt-5 md:mx-2.5 mx-40">
+      <div className="mt-32 md:mt-5 md:mx-2.5 mx-32">
         <p className="text-3xl md:text-xl text-center mt-5">
           Como profesor tengo experiencia en universidades públicas y educación
           en línea, ...
@@ -43,14 +44,14 @@ export const Courses = () => {
           PORQUE ...
         </p>
         <div className="font-bold text-center bg-gray-500 mx-5 p-20 text-white rounded-tl-full rounded-br-full mt-5">
-          <h2 className="text-4xl md:text-xl" data-aos="slide-down">
-            {" "}
-            La educación nos ayuda a ver ...
-          </h2>
-
-          <h2 className="text-4xl md:text-xl" data-aos="slide-up">
-            {" "}
-            el significado de la vida.
+          <h2 className="text-4xl md:text-2xl">
+          <TypewriterComponent
+                options={{
+                  strings: ['La educación 🧑‍🏫 nos ayuda a ver el significado de la vida', 'El principio de la educación es predicar con el ejemplo'],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
           </h2>
         </div>
       </div>

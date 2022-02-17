@@ -4,6 +4,7 @@ import { FaDocker, FaFlask, FaGithub, FaHtml5, FaJava, FaNodeJs, FaPhp, FaPython
 import { DiDjango } from 'react-icons/di';
 import { SiJavascript, SiMongodb, SiPostgresql, SiTailwindcss } from 'react-icons/si';
 import AOS from 'aos';
+import TypewriterComponent from "typewriter-effect";
 AOS.init({
   duration: 1000
 });
@@ -26,9 +27,17 @@ export const Home = () => {
             <div className='h-3/5'>
             <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_q7uarxsb.json"  background="transparent"  speed="1"    loop autoplay></lottie-player>            
             </div>
-            <div className='font-bold text-white md:px-5'>
-              <h1 className='text-5xl md:text-4xl' data-aos='slide-right'>Hola, soy <b className='text-yellow-500'> José Eduardo</b></h1>
-              <h2 className='text-3xl md:text-2xl' data-aos='slide-left'>Matemático y <b className='text-red-500'>Programador</b></h2>
+            <div className='font-bold text-white md:px-5 border-y-white'>
+              <h1 className='text-5xl md:text-4xl'>Hola, soy <b className='text-yellow-500 '>José Eduardo</b></h1>
+              
+              <h2 className='text-3xl md:text-3xl text-red-500'>
+                <TypewriterComponent
+                options={{
+                  strings: ['Matemático y . . .', 'Programador y . . .'],
+                  autoStart: true,
+                  loop: true,
+                }}
+              /></h2>
             </div>
 
           </div>
@@ -36,22 +45,22 @@ export const Home = () => {
         </div>
 
           {/* about */}  
-          <div className='h-screen text-2xl font-raleway flex flex-col justify-center mx-40 md:mx-2.5 md:mt-10'>
-            <h2 className='text-4xl text-center font-bold my-10' data-aos='slide-right'>¿Quién Soy?</h2>
-            <p className='text-3xl md:text-xl my-5'>
+          <div className='h-screen text-xl font-raleway flex flex-col justify-center mx-20 md:mx-2.5 sm:mt-44 md:mt-30 mt-14 sm:mb-44'>
+            <h2 className='text-4xl text-center font-bold my-10 mt-0' data-aos='slide-right'>¿Quién Soy?</h2>
+            <p className='text-3xl md:text-2xl my-5'>
               Estudié Matemáticas en la Universidad Nacional Autónoma de México (UNAM). Tengo la licenciatura y la maestría 🎓.
             </p>
-            <p className='text-3xl md:text-xl my-5'>
+            <p className='text-3xl md:text-2xl my-5'>
               Desde que me gradue he impartido clases en distintas instituciones educativas.
             </p>
-            <p className='text-3xl md:text-xl my-5'>
+            <p className='text-3xl md:text-2xl my-5'>
               Pero también disfruto y me apasiona la programación 💚.
             </p>
-            <p className='text-3xl md:text-xl my-5'>
+            <p className='text-3xl md:text-2xl my-5'>
               En el desarrollo web 💻, estoy más orientado al Backend, pero también hago Frontend. También me gusta el análisis de datos 📄 y la inteligencia artificial 🤖.
             </p>
 
-            <p className='text-3xl md:text-xl my-5'>
+            <p className='text-3xl md:text-2xl my-5'>
               Eterno Autodidacta.
             </p>
 
@@ -59,11 +68,11 @@ export const Home = () => {
       
         {/* Languages */}
         <div>
-        <h2 className='text-4xl font-bold text-center mb-5' data-aos='slide-right'>Lenguajes que manejo</h2>
+        <h2 className='text-4xl font-bold text-center  mb-10' data-aos='slide-right'>Lenguajes que manejo</h2>
           <div className='grid md:grid-cols-1 grid-cols-4'>
             <FaJava size={180} color="orange" className='w-full text-center mt-10'/>
             <FaPython size={180} color="#048bb1" className='w-full text-center mt-10 '/>
-            <SiJavascript size={180} color="#e8d44d" className='w-full text-center mt-10 animate-bounce'/>
+            <SiJavascript size={180} color="#e8d44d" className='w-full text-center mt-10 '/>
             <FaPhp size={180} color="#6b75b2" className='w-full text-center mt-10'/>
           </div>
         </div>
@@ -86,7 +95,7 @@ export const Home = () => {
         </div>
         {/* Python Buff */}
         <div className='my-20'>
-          <div className='text-center h-52 bg-tomato'>
+          <div className='text-center h-52 bg-azul'>
             <h2 className='text-white font-bold text-3xl py-10'>Sí, estás en lo correcto... Soy fan de Python</h2>
           </div>
 
@@ -102,7 +111,7 @@ export const Home = () => {
         </div>
         {/* dev stack section */}
         <div className='my-20'>
-          <div className='text-center h-52 bg-tomato'>
+          <div className='text-center h-52 bg-cafe'>
             <h2 className='text-white font-bold text-3xl py-10'>My Dev stack</h2>
           </div>
 

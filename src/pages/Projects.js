@@ -18,7 +18,7 @@ export const Projects = () => {
   return (
     <>
       <div>
-       <div className='h-screen md:mb-10 md:mx-2.5 mx-40'>
+       <div className='h-screen md:mb-10 md:mx-2.5 mx-24 mb-10 md:mb-1'>
          <div className='h-3/4'>
             <lottie-player 
               src="https://assets8.lottiefiles.com/packages/lf20_ygiuluqn.json"  background="transparent"  
@@ -34,7 +34,7 @@ export const Projects = () => {
         </p>
        
        </div>
-       <div className='font-bold text-center bg-limon mx-5 p-20 text-white rounded-tl-full rounded-br-full'>
+       <div className='font-bold text-center bg-limon mx-5 sm:mt-20 p-20 text-white rounded-tl-full rounded-br-full'>
          <h2 className='text-4xl md:text-2xl' data-aos="slide-right">estar enfocado y administrar ...</h2>
 
          <h2 className='text-4xl md:text-2xl'data-aos="slide-left"> mi tiempo y energía.</h2>

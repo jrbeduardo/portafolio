@@ -14,8 +14,8 @@ export const Footer = () => {
       </div>  
       <div className="bg-theme w-screen flex justify-center">
         <div className="md:w-full w-1/2">
-          <div className='p-10 font-raleway text-center'>
-            <p className='text-xl text-white pb-5'>Diseñado y creado por</p>
+          <div className='p-10 font-raleway  text-center'>
+            <p className='text-2xl text-white pb-2'>Made with ❤️ By</p>
             <div className="h-1 border-2 border-white border-dotted my-3"></div>
             <div className='flex text-2xl text-white w-full justify-evenly'>
               <FaFacebook className="cursor-pointer" onClick={()=>{
@@ -33,7 +33,7 @@ export const Footer = () => {
              
             </div>
             <div className="h-1 border-2 border-white border-dotted  my-3 "></div> 
-            <p className='text-xl text-white my-2'>@jrbeduardo</p>
+            <p className='text-2xl text-white my-2'>@jrbeduardo</p>
           </div>
         </div>
     </div>

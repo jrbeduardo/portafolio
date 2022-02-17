@@ -9,9 +9,8 @@ module.exports = {
         tomato: '#ff6347',
         limon: '#68a042',
         myyellow: '#dc9032',
-        cafe: '#9e7a58'
-
-
+        cafe: '#9e7a58',
+        azul: '#38bdf8'
       },
       fontFamily: {
         raleway: ['Raleway', 'sans-serif']
