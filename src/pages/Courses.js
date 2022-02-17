@@ -28,8 +28,8 @@ export const Courses = () => {
           </div>
         </div>
       </div>
-      <div className="mt-32 md:mt-5 md:mx-2.5 mx-32">
-        <p className="text-3xl md:text-xl text-center mt-5">
+      <div className="mt-20 md:mt-5 md:mx-2.5">
+        <p className="text-3xl md:text-xl text-center mt-5 mx-24">
           Como profesor tengo experiencia en universidades públicas y educación
           en línea
         </p>

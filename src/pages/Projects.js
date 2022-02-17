@@ -25,7 +25,7 @@ export const Projects = () => {
         </p>
        
        </div>
-       <div className='font-bold text-center bg-limon mx-5 sm:mt-20 p-20 text-white rounded-tl-full rounded-br-full'>
+       <div className='font-bold mt-20 text-center bg-limon mx-5 sm:mt-5 p-20 text-white rounded-tl-full rounded-br-full'>
          <h2 className='text-4xl md:text-2xl' data-aos="slide-right">estar enfocado y administrar ...</h2>
 
          <h2 className='text-4xl md:text-2xl'data-aos="slide-left"> mi tiempo y energía.</h2>
