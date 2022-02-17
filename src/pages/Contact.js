@@ -28,7 +28,7 @@ export const Contact = () => {
             <TypewriterComponent
                 options={{
                   strings: ['Si prefieres puedes descargar mi curriculum.',
-                '... o llena el formulario de más abajo ⬇️'],
+                '. . . o bien llena el formulario de más abajo ⬇️'],
                   autoStart: true,
                   loop: true,
                 }}

@@ -33,7 +33,11 @@ export const Home = () => {
               <h2 className='text-3xl md:text-3xl text-red-500'>
                 <TypewriterComponent
                 options={{
-                  strings: ['Matemático y . . .', 'Programador y . . .'],
+                  strings: ['Matemático', 
+                            'e<sup> i π</sup> = - 1',
+                            'Programador',
+                            '<code>print("hola Mundo")</code>'
+                          ],
                   autoStart: true,
                   loop: true,
                 }}
