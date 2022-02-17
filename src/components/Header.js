@@ -33,8 +33,8 @@ export const Header = () => {
         }
       >
         <div className="flex justify-between items-baseline w-full">
-          <h1 className="font-bold shadow-gray-600 text-2xl cursor-pointer"> 
-          <Link to="/"> 🟢jrbeduardo</Link>
+          <h1 className="font-bold text-2xl cursor-pointer"> 
+          <Link to="/">jrbeduardo</Link>
           </h1>
           <button
             onClick={() =>
