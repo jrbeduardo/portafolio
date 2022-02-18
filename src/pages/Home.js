@@ -64,7 +64,7 @@ export const Home = () => {
       </div>
 
       {/* about */}
-      <div className="mt-20 md:mt-5 text-xl font-raleway flex flex-col justify-center">
+      <div className="mt-20 md:mt-10 md:mx-2.5 mx-14 text-xl font-raleway flex flex-col justify-center">
         <h2
           className="text-4xl text-center font-bold my-10 mt-0"
           data-aos="slide-right"
