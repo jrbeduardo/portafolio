@@ -2,14 +2,13 @@ import { coursesData } from "../resources/courses";
 import { useScroll } from "../hooks/useScroll";
 import TypewriterComponent from "typewriter-effect";
 
-
 export const Courses = () => {
   useScroll();
   return (
     <>
       <div>
-        <div className="h-3/4 ">
-          <div className="h-3/4 pt-20 bg-theme">
+        <div className="md:h-3/5 h-screen">
+          <div className="h-4/5 md:h-3/5 bg-theme">
             <lottie-player
               src="https://assets8.lottiefiles.com/packages/lf20_xhfwgplf.json" 
               background="transparent"
@@ -18,18 +17,16 @@ export const Courses = () => {
               autoplay
             ></lottie-player>
           </div>
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path 
-                fill="#2a2a2a"
-                d="M0,128L48,128C96,128,192,128,288,112C384,96,480,64,576,74.7C672,85,768,139,864,176C960,213,1056,235,1152,218.7C1248,203,1344,149,1392,122.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-              ></path>
-            </svg>
-          </div>
-        </div>
+          <div className="relative">
+          <svg className="absolute -top-2"  xmlns="http://www.w3.org/2000/svg" viewBox="0 5 1440 320">
+            <path fill="#2a2a2a" fill-opacity="1" d="M0,96L26.7,90.7C53.3,85,107,75,160,101.3C213.3,128,267,192,320,229.3C373.3,267,427,277,480,261.3C533.3,245,587,203,640,192C693.3,181,747,203,800,213.3C853.3,224,907,224,960,224C1013.3,224,1067,224,1120,192C1173.3,160,1227,96,1280,85.3C1333.3,75,1387,117,1413,138.7L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
+          </svg>
       </div>
-      <div>
-        <p className="text-3xl md:text-xl text-center mt-5 mx-24 md:mx-2.5">
+            
+          </div>
+      </div>
+      <div className="flex flex-col justify-end">
+        <p className="text-3xl md:text-xl text-center md:mt-0   lg:mt-24  mx-24 mt-40 md:mx-2.5">
           Como profesor tengo experiencia en universidades públicas y educación
           en línea
         </p>
