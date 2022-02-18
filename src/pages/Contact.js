@@ -17,10 +17,11 @@ export const Contact = () => {
             <p className="font-semibold md:text-2xl text-4xl ">
             <TypewriterComponent
                 options={{
-                  strings: ['Si prefieres puedes descargar mi curriculum.',
-                '. . . o bien llena el formulario de más abajo'],
+                  strings: ['Si prefieres puedes descargar mi curriculum . . .',
+                '. . . o bien llena el formulario de más abajo.'],
                   autoStart: true,
                   loop: true,
+                  delay: 50,
                 }}
               />
               

@@ -40,6 +40,7 @@ export const Courses = () => {
                   strings: ['La educación nos ayuda a ver el significado de la vida', 'El principio de la educación es predicar con el ejemplo'],
                   autoStart: true,
                   loop: true,
+                  delay: 40,
                 }}
               />
           </h2>

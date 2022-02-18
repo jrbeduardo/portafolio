@@ -53,9 +53,12 @@ export const Home = () => {
                     "e<sup> i π</sup> + 1 = 0",
                     "Programador",
                     '<code>print("hola Mundo")</code>',
+                    "y profesor",
                   ],
                   autoStart: true,
                   loop: true,
+                  delay: 40,
+
                 }}
               />
             </h2>
