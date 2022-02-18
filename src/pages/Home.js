@@ -27,11 +27,11 @@ AOS.init({
 export const Home = () => {
   useScroll();
   return (
-    <div>
+    <div className="grid grid-cols-1">
       {/* intro section */}
       <div className="h-screen bg-theme">
         <div className="flex md:flex-col justify-evenly h-screen items-center border-4 border-white rotate-12  mx-10 bg-theme md:rotate-0 md:border-0">
-          <div className="h-2/3">
+          <div className="h-3/5 md:2/5">
             <lottie-player
               src="https://assets2.lottiefiles.com/packages/lf20_cqdzv4dr.json"
               background="transparent"
@@ -40,7 +40,7 @@ export const Home = () => {
               autoplay
             ></lottie-player>
           </div>
-          <div className="font-bold text-white md:px-5 border-y-white">
+          <div className="font-bold text-white md:px-2.5 border-y-white">
             <h1 className="text-5xl md:text-4xl">
               Hola, soy <b className="text-yellow-500 ">José Eduardo</b>
             </h1>
@@ -64,7 +64,7 @@ export const Home = () => {
       </div>
 
       {/* about */}
-      <div className="h-screen text-xl font-raleway flex flex-col justify-center mx-20 md:mx-2.5 sm:mt-44 md:mt-30 mt-14 sm:mb-44">
+      <div className="mt-20 md:mt-5 text-xl font-raleway flex flex-col justify-center">
         <h2
           className="text-4xl text-center font-bold my-10 mt-0"
           data-aos="slide-right"
