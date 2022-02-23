@@ -6,22 +6,26 @@ import { menuItems } from "../resources/menuItems";
 
 export const Header = () => {
   const [showMenu, setShowMenu] = useState("md:hidden");
-  
+
   return (
     <div className="text-white bg-tomato font-raleway  text-xl font-semibold sticky left-0 top-0 z-50">
       <div
         className={
           showMenu === "md:hidden"
-            ? "flex mx-11 md:mx-2.5 justify-rounded items-baseline p-2 shadow-lg"
+            ? "flex mx-11 md:mx-2.5 justify-center items-center p-2 shadow-lg"
             : "flex mx-11 md:mx-0  md:flex-col justify-rounded items-baseline p-2 shadow-lg"
         }
       >
         <div className="flex justify-between items-baseline w-full">
           <h1 className="font-bold text-2xl cursor-pointer ">
-            <a  href="https://drive.google.com/file/d/1s99GQpOPuuzaHB8D_85czUrPSnUTdgqn/view?usp=sharing" download="CV_eduardo.pdf">
-             jrbeduardo
-            </a>  
-            
+            <a
+              className="flex justify-center items-center gap-2 hover:animate-pulse"
+              href="https://drive.google.com/file/d/1s99GQpOPuuzaHB8D_85czUrPSnUTdgqn/view?usp=sharing"
+              download="CV_eduardo.pdf"
+            >
+              <img className="h-7 w-7" src="./Tux.svg" alt="Tux" />
+              <span>jrbeduardo</span>
+            </a>
           </h1>
           <button
             onClick={() =>
