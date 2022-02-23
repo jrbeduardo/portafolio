@@ -12,12 +12,12 @@ export const Header = () => {
       <div
         className={
           showMenu === "md:hidden"
-            ? "flex mx-11 md:mx-2.5 justify-center items-center p-2 shadow-lg"
-            : "flex mx-11 md:mx-0  md:flex-col justify-rounded items-baseline p-2 shadow-lg"
+            ? "flex mx-11 md:mx-2.5  flex-row lg:flex-col justify-center items-center p-2 shadow-lg"
+            : "flex mx-11  md:flex-col justify-rounded items-baseline p-2 shadow-lg"
         }
       >
         <div className="flex justify-between items-baseline w-full">
-          <h1 className="font-bold text-2xl cursor-pointer ">
+          <h1 className="font-bold lg:mx-auto text-2xl cursor-pointer ">
             <a
               className="flex justify-center items-center gap-2 hover:animate-pulse"
               href="https://drive.google.com/file/d/1s99GQpOPuuzaHB8D_85czUrPSnUTdgqn/view?usp=sharing"
