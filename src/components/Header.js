@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
 import { menuItems } from "../resources/menuItems";
@@ -17,8 +17,11 @@ export const Header = () => {
         }
       >
         <div className="flex justify-between items-baseline w-full">
-          <h1 className="font-bold text-2xl cursor-pointer">
-            <Link to="/">jrbeduardo</Link>
+          <h1 className="font-bold text-2xl cursor-pointer ">
+            <a  href="https://drive.google.com/file/d/1s99GQpOPuuzaHB8D_85czUrPSnUTdgqn/view?usp=sharing" download="CV_eduardo.pdf">
+             jrbeduardo
+            </a>  
+            
           </h1>
           <button
             onClick={() =>

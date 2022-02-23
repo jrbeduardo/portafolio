@@ -30,7 +30,7 @@ export const Home = () => {
     <div className="grid grid-cols-1">
       {/* intro section */}
       <div className="h-screen bg-theme">
-        <div className="flex md:flex-col justify-evenly h-screen items-center border-4 border-white rotate-12  mx-10 bg-theme md:rotate-0 md:border-0">
+        <div className="flex md:flex-col justify-evenly sm:justify-start sm:items-start h-screen items-center border-4 border-white rotate-12  mx-10 bg-theme md:rotate-0 md:border-0">
           <div className="h-3/5 md:2/5">
             <lottie-player
               src="https://assets2.lottiefiles.com/packages/lf20_cqdzv4dr.json"
@@ -45,7 +45,7 @@ export const Home = () => {
               Hola, soy <b className="text-yellow-500 ">José Eduardo</b>
             </h1>
 
-            <h2 className="text-4xl md:text-3xl text-red-500">
+            <h2 className="text-4xl md:text-3xl text-red-500 sm:text-9xl">
               <TypewriterComponent
                 options={{
                   strings: [
