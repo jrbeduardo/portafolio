@@ -18,88 +18,60 @@ export const Contact = () => {
       </div>
 
       {/* Contact Information */}
-      <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="max-w-4xl mx-auto px-6 py-16">
+        <div className="text-center">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-12">
+            Información de Contacto
+          </h2>
           
-          {/* Contact Info */}
-          <div className="space-y-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-6">
-              Información de Contacto
-            </h2>
-            
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="bg-blue-accent p-3 rounded-full">
-                  <FaEnvelope className="text-white text-xl" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Email</h3>
-                  <a href="mailto:jrbeduardo@gmail.com" className="text-blue-accent hover:underline">
-                    jrbeduardo@gmail.com
-                  </a>
-                </div>
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+            <div className="flex flex-col items-center space-y-4 p-6 bg-gray-50 rounded-lg">
+              <div className="bg-blue-accent p-4 rounded-full">
+                <FaEnvelope className="text-white text-2xl" />
               </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="bg-blue-accent p-3 rounded-full">
-                  <FaLinkedin className="text-white text-xl" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">LinkedIn</h3>
-                  <a href="https://linkedin.com/in/jrbeduardo" target="_blank" rel="noopener noreferrer" className="text-blue-accent hover:underline">
-                    linkedin.com/in/jrbeduardo
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="bg-blue-accent p-3 rounded-full">
-                  <FaGithub className="text-white text-xl" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">GitHub</h3>
-                  <a href="https://github.com/jrbeduardo" target="_blank" rel="noopener noreferrer" className="text-blue-accent hover:underline">
-                    github.com/jrbeduardo
-                  </a>
-                </div>
+              <div className="text-center">
+                <h3 className="font-semibold text-gray-900 mb-2">Email</h3>
+                <a href="mailto:jrbeduardo@gmail.com" className="text-blue-accent hover:underline">
+                  jrbeduardo@gmail.com
+                </a>
               </div>
             </div>
 
-            <div className="mt-8 p-6 bg-gray-50 rounded-lg">
-              <h3 className="font-semibold text-gray-900 mb-4">Descarga mi CV</h3>
-              <p className="text-gray-600 mb-4">
-                Obtén más detalles sobre mi experiencia y habilidades profesionales.
-              </p>
-              <a href="https://drive.google.com/file/d/1s99GQpOPuuzaHB8D_85czUrPSnUTdgqn/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                <button className='bg-blue-accent hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition-colors duration-200'>
-                  Descargar CV
-                </button>
-              </a>
+            <div className="flex flex-col items-center space-y-4 p-6 bg-gray-50 rounded-lg">
+              <div className="bg-blue-accent p-4 rounded-full">
+                <FaLinkedin className="text-white text-2xl" />
+              </div>
+              <div className="text-center">
+                <h3 className="font-semibold text-gray-900 mb-2">LinkedIn</h3>
+                <a href="https://linkedin.com/in/jrbeduardo" target="_blank" rel="noopener noreferrer" className="text-blue-accent hover:underline">
+                  linkedin.com/in/jrbeduardo
+                </a>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center space-y-4 p-6 bg-gray-50 rounded-lg">
+              <div className="bg-blue-accent p-4 rounded-full">
+                <FaGithub className="text-white text-2xl" />
+              </div>
+              <div className="text-center">
+                <h3 className="font-semibold text-gray-900 mb-2">GitHub</h3>
+                <a href="https://github.com/jrbeduardo" target="_blank" rel="noopener noreferrer" className="text-blue-accent hover:underline">
+                  github.com/jrbeduardo
+                </a>
+              </div>
             </div>
           </div>
 
-          {/* Map */}
-          <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-            <div className="p-6">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-                Ubicación
-              </h2>
-              <p className="text-gray-600 mb-6">
-                Ciudad de México, México
-              </p>
-            </div>
-            <div className="h-96">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481731.3325882059!2d-99.41543239074369!3d19.390519011860457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1648584726000!5m2!1ses!2smx"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Mapa de Ciudad de México"
-              ></iframe>
-            </div>
+          <div className="max-w-md mx-auto p-8 bg-white border border-gray-200 rounded-lg shadow-sm">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Descarga mi CV</h3>
+            <p className="text-gray-600 mb-6">
+              Obtén más detalles sobre mi experiencia y habilidades profesionales.
+            </p>
+            <a href="https://drive.google.com/file/d/1s99GQpOPuuzaHB8D_85czUrPSnUTdgqn/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <button className='bg-blue-accent hover:bg-blue-700 text-white px-8 py-4 rounded-md font-medium transition-colors duration-200 text-lg'>
+                Descargar CV
+              </button>
+            </a>
           </div>
         </div>
       </div>
