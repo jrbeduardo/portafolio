@@ -24,7 +24,7 @@ export const Contact = () => {
             Información de Contacto
           </h2>
           
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 gap-8 mb-12">
             <div className="flex flex-col items-center space-y-4 p-6 bg-gray-50 rounded-lg">
               <div className="bg-blue-accent p-4 rounded-full">
                 <FaEnvelope className="text-white text-3xl" />
