@@ -18,8 +18,8 @@ export const Home = () => {
   return (
     <div className="grid grid-cols-1">
       {/* intro section */}
-      <div className="h-screen bg-gray-charcoal">
-        <div className="flex md:flex-col justify-evenly sm:justify-start sm:items-start h-screen items-center border-4 border-white rotate-12  mx-10 bg-gray-charcoal md:rotate-0 md:border-0">
+      <div className="h-screen bg-gradient-to-br from-slate-900 to-slate-800">
+        <div className="flex md:flex-col justify-evenly sm:justify-start sm:items-start h-screen items-center border-4 border-white rotate-12  mx-10 bg-gradient-to-br from-slate-900 to-slate-800 md:rotate-0 md:border-0">
           <div className="h-3/5 md:2/5 flex justify-center items-center">
             <img src="/fot.png" alt="Eduardo Barrios" className="w-64 h-64 object-cover object-[center_1%] rounded-full border-4 border-white shadow-lg" />
           </div>

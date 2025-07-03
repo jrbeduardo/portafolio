@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <div className="bg-gray-charcoal w-full mt-20">
+    <div className="bg-gradient-to-br from-slate-900 to-slate-800 w-full mt-20">
       <div className="max-w-4xl mx-auto px-6 py-8">
         <div className='font-raleway text-center'>
           <p className='text-lg text-white mb-6'>© 2025 Eduardo Barrios</p>

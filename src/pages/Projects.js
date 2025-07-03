@@ -6,12 +6,12 @@ export const Projects = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header Section */}
-      <div className="pt-20 pb-16 bg-gray-charcoal">
+      <div className="pt-20 pb-24 bg-gradient-to-br from-slate-900 to-slate-800">
         <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-4xl md:text-3xl font-bold text-center text-white mb-6">
+          <h1 className="text-4xl md:text-3xl font-light text-center text-white mb-6">
             Proyectos
           </h1>
-          <p className="text-lg md:text-base text-center text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg md:text-base text-center text-slate-300 max-w-2xl mx-auto font-light">
             Una selección de proyectos que demuestran mi experiencia en desarrollo full-stack, 
             análisis de datos y soluciones tecnológicas.
           </p>
