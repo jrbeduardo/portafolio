@@ -9,7 +9,7 @@ export const Contact = () => {
       <div className="pt-20 pb-24 bg-gradient-to-br from-slate-900 to-slate-800">
         <div className="max-w-4xl mx-auto px-6">
           <h1 className="text-4xl md:text-3xl font-light text-center text-white mb-6">
-            Contacto
+            Conectemos
           </h1>
           <p className="text-lg md:text-base text-center text-slate-300 max-w-2xl mx-auto font-light">
             ¿Tienes un proyecto en mente? Me encantaría colaborar contigo.
@@ -20,9 +20,6 @@ export const Contact = () => {
       {/* Contact Information */}
       <div className="max-w-3xl mx-auto px-6 py-20">
         <div className="text-center">
-          <h2 className="text-3xl font-light text-slate-800 mb-16">
-            Conectemos
-          </h2>
           
           <div className="grid grid-cols-1 gap-6 mb-16">
             <div className="group bg-white p-8 rounded-2xl border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all duration-300">
