@@ -1,21 +1,10 @@
 import {
-  FaDocker,
-  FaFlask,
-  FaGithub,
-  FaHtml5,
   FaJava,
-  FaNodeJs,
   FaPhp,
   FaPython,
-  FaReact,
-  FaUbuntu,
 } from "react-icons/fa";
-import { DiDjango } from "react-icons/di";
 import {
   SiJavascript,
-  SiMongodb,
-  SiPostgresql,
-  SiTailwindcss,
 } from "react-icons/si";
 import AOS from "aos";
 import TypewriterComponent from "typewriter-effect";
@@ -29,23 +18,17 @@ export const Home = () => {
   return (
     <div className="grid grid-cols-1">
       {/* intro section */}
-      <div className="h-screen bg-theme">
-        <div className="flex md:flex-col justify-evenly sm:justify-start sm:items-start h-screen items-center border-4 border-white rotate-12  mx-10 bg-theme md:rotate-0 md:border-0">
-          <div className="h-3/5 md:2/5">
-            <lottie-player
-              src="https://assets2.lottiefiles.com/packages/lf20_cqdzv4dr.json"
-              background="transparent"
-              speed="1"
-              loop
-              autoplay
-            ></lottie-player>
+      <div className="h-screen bg-gray-charcoal">
+        <div className="flex md:flex-col justify-evenly sm:justify-start sm:items-start h-screen items-center border-4 border-white rotate-12  mx-10 bg-gray-charcoal md:rotate-0 md:border-0">
+          <div className="h-3/5 md:2/5 flex justify-center items-center">
+            <img src="./foto_mia.png" alt="Eduardo Barrios" className="w-64 h-64 object-cover object-[center_5%] rounded-full border-4 border-white shadow-lg" />
           </div>
           <div className="font-bold text-white md:px-2.5 border-y-white">
             <h1 className="text-5xl md:text-4xl">
-              Hola, soy <b className="text-yellow-500 ">José Eduardo</b>
+              Hola, soy <b className="text-blue-accent ">Eduardo Barrios</b>
             </h1>
 
-            <h2 className="text-4xl md:text-3xl text-red-500 sm:text-9xl">
+            <h2 className="text-4xl md:text-3xl text-blue-accent sm:text-9xl">
               <TypewriterComponent
                 options={{
                   strings: [
@@ -69,185 +52,169 @@ export const Home = () => {
       {/* about */}
       <div className="mt-20 md:mt-10 md:mx-2.5 mx-14 text-xl font-raleway flex flex-col justify-center">
         <h2
-          className="text-4xl text-center font-bold my-10 mt-0"
-          data-aos="slide-right"
+          className="text-4xl text-center font-bold my-10 mt-0 text-blue-corporate"
         >
-          ¿Quién Soy?
+          Perfil Profesional
         </h2>
-        <p className="text-3xl md:text-2xl my-5">
-          Estudié Matemáticas en la Universidad Nacional Autónoma de México
-          (UNAM). Tengo la licenciatura y la maestría 🎓.
-        </p>
-        <p className="text-3xl md:text-2xl my-5">
-          Desde que me gradue he impartido clases en distintas instituciones
-          educativas.
-        </p>
-        <p className="text-3xl md:text-2xl my-5">
-          Pero también disfruto y me apasiona la programación 💚.
-        </p>
-        <p className="text-3xl md:text-2xl my-5">
-          En el desarrollo web 💻, estoy más orientado al Backend, pero también
-          hago Frontend. También me gusta el análisis de datos 📄 y la
-          inteligencia artificial 🤖.
-        </p>
-
-        <p className="text-3xl md:text-2xl my-5">Eterno Autodidacta 🙌 😄.</p>
-      </div>
-
-      {/* Languages */}
-      <div>
-        <h2
-          className="text-4xl font-bold text-center  mb-10"
-          data-aos="slide-right"
-        >
-          Lenguajes que manejo
-        </h2>
-        <div className="grid md:grid-cols-1 grid-cols-4">
-          <FaJava
-            size={180}
-            color="orange"
-            className="w-full text-center mt-10"
-          />
-          <FaPython
-            size={180}
-            color="#048bb1"
-            className="w-full text-center mt-10 "
-          />
-          <SiJavascript
-            size={180}
-            color="#e8d44d"
-            className="w-full text-center mt-10 "
-          />
-          <FaPhp
-            size={180}
-            color="#6b75b2"
-            className="w-full text-center mt-10"
-          />
-        </div>
-      </div>
-      {/* tecnologias */}
-      <div>
-        <h2
-          className="text-4xl font-bold text-center my-10"
-          data-aos="slide-right"
-        >
-          Herramientas que uso
-        </h2>
-        <div className="grid md:grid-cols-2 grid-cols-6">
-          <FaReact
-            size={160}
-            color="#01c5f7"
-            className="w-full text-center mt-10 animate-spin"
-          />
-          <DiDjango
-            size={160}
-            color="#103c2d"
-            className="w-full text-center mt-10"
-          />
-          <FaFlask size={160} className="w-full text-center mt-10" />
-          <FaNodeJs
-            size={160}
-            color="#8cbf3e"
-            className="w-full text-center mt-10"
-          />
-          <FaHtml5
-            size={160}
-            color="#dd4b24"
-            className="w-full text-center mt-10"
-          />
-          <SiPostgresql
-            size={160}
-            color="#305d8d"
-            className="w-full text-center mt-10"
-          />
-          <SiMongodb
-            size={160}
-            color="#239443"
-            className="w-full text-center mt-10"
-          />
-          <FaUbuntu
-            size={160}
-            color="#e55323"
-            className="w-full text-center mt-10 "
-          />
-          <FaDocker
-            size={160}
-            color="#0996e5"
-            className="w-full text-center mt-10"
-          />
-          <FaGithub size={160} className="w-full text-center mt-10" />
-          <SiTailwindcss
-            size={160}
-            color="#14b9c5"
-            className="w-full text-center mt-10"
-          />
-        </div>
-      </div>
-      {/* Python Buff */}
-      <div className="my-20">
-        <div className="text-center h-52 bg-azul">
-          <h2 className="text-white font-bold text-3xl py-10">
-            Sí, estás en lo correcto... Soy fan de Python
-          </h2>
-        </div>
-
-        <div className="md:mx-5 mx-32 shadow-2xl bg-gray-50 -mt-20 rounded-lg hover:bg-gray-700 hover:text-white">
-          <div className="h-96">
-            <lottie-player
-              src="https://assets7.lottiefiles.com/packages/lf20_2znxgjyt.json"
-              background="transparent"
-              speed="1"
-              loop
-              autoplay
-            ></lottie-player>
+        
+        <div className="max-w-4xl mx-auto space-y-6 text-gray-charcoal">
+          <p className="text-xl md:text-lg leading-relaxed">
+            <strong>Ingeniero de Datos</strong> con sólida formación matemática y más de 2 años de experiencia 
+            en el sector corporativo. Maestro en Matemáticas por la UNAM con amplia experiencia en docencia 
+            universitaria y desarrollo de soluciones tecnológicas.
+          </p>
+          
+          <p className="text-xl md:text-lg leading-relaxed">
+            Mi experiencia en <strong>Grupo Coppel</strong> como Ingeniero de Datos me ha permitido desarrollar 
+            expertise en recolección, procesamiento y análisis de grandes volúmenes de datos, diseño de 
+            arquitecturas escalables, y desarrollo de pipelines ETL automatizados. He trabajado con diversas 
+            fuentes de datos incluyendo bases de datos relacionales, archivos CSV, APIs web y sistemas distribuidos.
+          </p>
+          
+          <p className="text-xl md:text-lg leading-relaxed">
+            Como <strong>desarrollador Full Stack</strong>, domino tecnologías modernas tanto en frontend 
+            (React, JavaScript, HTML/CSS) como en backend (Python, Node.js, Django, Flask). Mi enfoque se 
+            centra en crear soluciones robustas y escalables que integren análisis de datos con interfaces 
+            de usuario intuitivas.
+          </p>
+          
+          <p className="text-xl md:text-lg leading-relaxed">
+            En el ámbito académico, he sido <strong>profesor universitario</strong> en instituciones como 
+            UNAM, UAM-I y UACM, impartiendo asignaturas de matemáticas avanzadas, álgebra lineal y cálculo. 
+            Actualmente soy ayudante de profesor en la Facultad de Ciencias de la UNAM, enseñando 
+            clasificación de imágenes con redes neuronales.
+          </p>
+          
+          <div className="bg-bg-light p-6 rounded-lg border-l-4 border-blue-corporate">
+            <h3 className="text-lg font-bold mb-3 text-blue-corporate">Áreas de Especialización:</h3>
+            <ul className="text-lg md:text-base space-y-2 text-gray-charcoal">
+              <li>• <strong>Ingeniería de Datos:</strong> ETL, Data Warehousing, Big Data, Pipelines automatizados</li>
+              <li>• <strong>Ciencia de Datos:</strong> Machine Learning, Análisis estadístico, Visualización de datos</li>
+              <li>• <strong>Desarrollo Full Stack:</strong> Python, JavaScript, React, Django, APIs REST</li>
+              <li>• <strong>Docencia Universitaria:</strong> Matemáticas, Estadística, Programación, IA</li>
+            </ul>
           </div>
-          <p className="text-2xl my-5 md:text-xl md:px-5 px-14 py-10">
-            Python es un lenguaje de programación de alto nivel que se utiliza
-            para desarrollar aplicaciones de todo tipo. Se trata de un lenguaje
-            multiplataforma de código abierto y, por lo tanto, gratuito, lo que
-            permite desarrollar software sin límites.
+          
+          <p className="text-lg md:text-base text-gray-medium italic text-center">
+            Buscando oportunidades para aplicar mi experiencia en proyectos desafiantes que combinen 
+            análisis de datos, desarrollo de software y transferencia de conocimiento.
           </p>
         </div>
       </div>
-      {/* dev stack section */}
-      <div className="my-20">
-        <div className="text-center h-52 bg-cafe">
-          <h2 className="text-white font-bold text-3xl py-10">My Dev stack</h2>
-        </div>
 
-        <div className="md:mx-5 mx-32 shadow-2xl bg-gray-50 -mt-20 rounded-lg hover:bg-gray-700 hover:text-white">
-          <div className="h-96" data-aos="zoom-in-up">
-            <lottie-player
-              src="https://assets9.lottiefiles.com/packages/lf20_sSF6EG.json"
-              background="transparent"
-              speed="1"
-              loop
-              autoplay
-            ></lottie-player>
+      {/* Skills */}
+      <div className="mt-20 md:mt-10 md:mx-2.5 mx-14 text-xl font-raleway flex flex-col justify-center">
+        <h2 className="text-4xl text-center font-bold my-10 mt-0 text-blue-corporate">
+          Habilidades Técnicas
+        </h2>
+        
+        <div className="max-w-6xl mx-auto grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          
+          {/* Lenguajes de Programación */}
+          <div className="bg-bg-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-bold mb-4 text-blue-corporate border-b-2 border-blue-corporate pb-2">
+              Lenguajes de Programación
+            </h3>
+            <div className="space-y-2 text-gray-charcoal">
+              <div className="flex items-center space-x-2">
+                <FaPython size={20} className="text-blue-500" />
+                <span className="font-medium">Python</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <FaJava size={20} className="text-orange-500" />
+                <span className="font-medium">Java</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <span className="w-5 h-5 bg-gray-600 rounded text-white text-xs flex items-center justify-center font-bold">C</span>
+                <span className="font-medium">C</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <span className="w-5 h-5 bg-blue-600 rounded text-white text-xs flex items-center justify-center font-bold">R</span>
+                <span className="font-medium">R</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <FaPhp size={20} className="text-purple-600" />
+                <span className="font-medium">PHP</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <SiJavascript size={20} className="text-yellow-500" />
+                <span className="font-medium">JavaScript</span>
+              </div>
+            </div>
           </div>
-          <div className="grid md:grid-cols-1 grid-cols-3 p-5">
-            <div className="text-left">
-              <h2 className="text-xl font-bold">FrontEnd</h2>
-              <hr></hr>
-              <p className="mt-2">HTML/CSS</p>
-              <p className="mt-2">React</p>
-              <p className="mt-2">JavaScript</p>
-            </div>
-            <div className="text-center">
-              <h2 className="text-xl font-bold">UI / UX</h2>
-              <hr></hr>
-              <p className="mt-2">Tailwind</p>
-              <p className="mt-2">Bootstrap</p>
-            </div>
-            <div className="text-right">
-              <h2 className="text-xl font-bold">BackEnd and DB</h2>
-              <hr></hr>
-              <p className="mt-2">Node JS</p>
-              <p className="mt-2">Python</p>
-              <p className="mt-2">MongoDB</p>
-              <p className="mt-2">Oracle</p>
+
+          {/* Herramientas y Frameworks */}
+          <div className="bg-bg-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-bold mb-4 text-blue-corporate border-b-2 border-blue-corporate pb-2">
+              Herramientas y Frameworks
+            </h3>
+            <div className="space-y-2 text-gray-charcoal">
+              <span className="block">• Flask, Django, FastAPI</span>
+              <span className="block">• Jupyter Notebooks</span>
+              <span className="block">• PySpark</span>
+              <span className="block">• R/RStudio</span>
+              <span className="block">• React/Node.js</span>
+              <span className="block">• Bootstrap/Tailwind</span>
+              <span className="block">• HTML/CSS</span>
+              <span className="block">• Docker</span>
+              <span className="block">• Git/GitHub/GitLab</span>
+              <span className="block">• LaTeX</span>
+              <span className="block">• Power BI</span>
             </div>
           </div>
+
+          {/* Bases de Datos */}
+          <div className="bg-bg-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-bold mb-4 text-blue-corporate border-b-2 border-blue-corporate pb-2">
+              Bases de Datos
+            </h3>
+            <div className="space-y-2 text-gray-charcoal">
+              <div>
+                <span className="font-semibold text-green-professional">SQL:</span>
+                <span className="block ml-4">• Oracle</span>
+                <span className="block ml-4">• MySQL</span>
+                <span className="block ml-4">• PostgreSQL</span>
+              </div>
+              <div className="mt-3">
+                <span className="font-semibold text-green-professional">NoSQL:</span>
+                <span className="block ml-4">• MongoDB (básico)</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Servicios de Nube */}
+          <div className="bg-bg-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-bold mb-4 text-blue-corporate border-b-2 border-blue-corporate pb-2">
+              Servicios de Nube
+            </h3>
+            <div className="space-y-2 text-gray-charcoal">
+              <span className="block">• Google Cloud Platform (básico)</span>
+              <span className="block">• Microsoft Azure (básico)</span>
+            </div>
+          </div>
+
+          {/* Sistemas Operativos */}
+          <div className="bg-bg-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-bold mb-4 text-blue-corporate border-b-2 border-blue-corporate pb-2">
+              Sistemas Operativos
+            </h3>
+            <div className="space-y-2 text-gray-charcoal">
+              <span className="block">• Windows</span>
+              <span className="block">• Linux (Debian, Ubuntu, Linux Mint)</span>
+            </div>
+          </div>
+
+          {/* Idiomas */}
+          <div className="bg-bg-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-bold mb-4 text-blue-corporate border-b-2 border-blue-corporate pb-2">
+              Idiomas
+            </h3>
+            <div className="space-y-2 text-gray-charcoal">
+              <span className="block"><strong>Español:</strong> Nativo</span>
+              <span className="block"><strong>Inglés:</strong> B1 (Marco Común Europeo)</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

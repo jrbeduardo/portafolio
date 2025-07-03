@@ -5,12 +5,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        theme: '#2a2a2a',
+        // Paleta profesional
+        'blue-corporate': '#1E3A8A',
+        'gray-charcoal': '#374151',
+        'blue-accent': '#3B82F6',
+        'green-professional': '#059669',
+        'gray-medium': '#6B7280',
+        'gray-dark': '#111827',
+        'gray-light': '#E5E7EB',
+        'bg-light': '#F9FAFB',
+        // Colores legacy para compatibilidad
+        theme: '#374151',
         tomato: '#fe5550',
-        limon: '#68a042',
+        limon: '#059669',
         myyellow: '#dc9032',
         cafe: '#9e7a58',
-        azul: '#38bdf8'
+        azul: '#3B82F6'
       },
       fontFamily: {
         raleway: ['Raleway', 'sans-serif']

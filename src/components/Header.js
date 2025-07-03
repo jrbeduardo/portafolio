@@ -8,7 +8,7 @@ export const Header = () => {
   const [showMenu, setShowMenu] = useState("md:hidden");
 
   return (
-    <div className="text-white bg-tomato font-raleway  text-xl font-semibold sticky left-0 top-0 z-50">
+    <div className="text-white bg-blue-accent font-raleway  text-xl font-semibold sticky left-0 top-0 z-50">
       <div
         className={
           showMenu === "md:hidden"
@@ -23,7 +23,7 @@ export const Header = () => {
               href="https://drive.google.com/file/d/1s99GQpOPuuzaHB8D_85czUrPSnUTdgqn/view?usp=sharing"
               download="CV_eduardo.pdf"
             >
-              <img className="h-7 w-7" src="./Tux.svg" alt="Tux" />
+             
               <span>jrbeduardo</span>
             </a>
           </h1>
@@ -38,7 +38,7 @@ export const Header = () => {
             {showMenu === "md:hidden" ? (
               <FaBars size={30} />
             ) : (
-              <MdClose size={30} className="rounded-lg hover:bg-limon" />
+              <MdClose size={30} className="rounded-lg hover:bg-green-professional" />
             )}
           </button>
         </div>
@@ -46,7 +46,7 @@ export const Header = () => {
           {menuItems.map((item) => (
             <li className="list-none mx-2" key={item.key}>
               <NavLink
-                className="rounded-lg text-lg hover:bg-limon"
+                className="rounded-lg text-lg hover:bg-green-professional"
                 style={({ isActive }) => {
                   return {
                     backgroundColor: isActive ? "#68a042" : "",
@@ -66,7 +66,7 @@ export const Header = () => {
           {menuItems.map((item) => (
             <li className="list-none my-2 " key={item.key}>
               <NavLink
-                className="rounded-lg hover:bg-limon"
+                className="rounded-lg hover:bg-green-professional"
                 onClick={() =>
                   showMenu === "md:hidden"
                     ? setShowMenu("md:flex")

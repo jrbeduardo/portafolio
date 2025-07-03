@@ -1,59 +1,51 @@
 import { projectsData } from '../resources/projects'
-import AOS from 'aos';
 import { useScroll } from "../hooks/useScroll";
-AOS.init({
-  duration: 1000
-});
+
 export const Projects = () => {
   useScroll();
   return (
-    <>
-      <div className='flex flex-col'>
-       <div className='h-screen w-full '>
-         <div className='h-3/4 bg-theme '>
-            <lottie-player 
-              src="https://assets8.lottiefiles.com/packages/lf20_zpymeot9.json"  background="transparent"  
-              speed="1"  
-              loop  
-              autoplay></lottie-player>
-         </div>
-         <p className='text-3xl md:text-xl md:mb-10 mt-10 md:mb-1 md:mx-2.5 mx-24 text-center  mb:mb-10 mb-5 ' >
-         Profesionalmente no me comprometo a trabajar en más proyectos de los que pueda contar con mi mano 🖐🏻
-        </p>
-        <p className='text-4xl  md:text-2xl text-center font-bold mt-5'>
-          PORQUE me premite . . .
-        </p>
-       
-       </div>
-       <div className='font-bold mt-20 text-center sm:mt-13 bg-limon mx-5 p-20 text-white rounded-tl-full rounded-br-full'>
-         <h2 className='text-4xl md:text-2xl' data-aos="slide-right">estar enfocado y administrar ...</h2>
-
-         <h2 className='text-4xl md:text-2xl'data-aos="slide-left"> mi tiempo y energía.</h2>
-       </div>
-    </div>
-    <div className='grid mt-20 md:grid-cols-1 grid-cols-3 items-center justify-center gap-10 mx-20 md:mx-5'>
-      {projectsData.map(project => 
-      <div key={project.title}>
-        <div className='relative p-2 border-2 text-center rounded-bl-3xl rounded-tr-3xl border-gray-400 grid grid-cols-1 divide-y'>
-          <img 
-            className='w-full'
-            src={project.image} 
-            alt={project.title}
-            ></img>
-            <hr ></hr>
-            <p className="h-2/5">{project.description}</p>
-            <div className='absolute inset-0 flex flex-col items-center justify-center opacity-0 bg-black hover:opacity-80 rounded-bl-3xl rounded-tr-3xl'>
-              <h1 className='text-2xl text-white font-semibold'>{project.title}</h1>
-              <button onClick={()=>{
-                window.open(project.link, '_blank');
-              }} className='border-2  text-white rounded border-white py-2 px-5 hover:bg-green-500 font-bold mt-5'>VER</button>
-                           
-            </div>
+    <div className="min-h-screen bg-white">
+      {/* Header Section */}
+      <div className="pt-20 pb-16 bg-gray-charcoal">
+        <div className="max-w-4xl mx-auto px-6">
+          <h1 className="text-4xl md:text-3xl font-bold text-center text-white mb-6">
+            Proyectos
+          </h1>
+          <p className="text-lg md:text-base text-center text-gray-300 max-w-2xl mx-auto">
+            Una selección de proyectos que demuestran mi experiencia en desarrollo full-stack, 
+            análisis de datos y soluciones tecnológicas.
+          </p>
         </div>
-      </div>)}
-    </div>
-    </>
-    
+      </div>
 
+      {/* Projects Grid */}
+      <div className="max-w-6xl mx-auto px-6 py-16">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          {projectsData.map(project => (
+            <div key={project.title} className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                  {project.description}
+                </p>
+                <div className="flex justify-end">
+                  <button 
+                    onClick={() => window.open(project.link, '_blank')}
+                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-blue-600 hover:text-blue-800 border border-blue-600 hover:border-blue-800 rounded-md hover:bg-blue-50 transition-colors duration-200"
+                  >
+                    Ver Proyecto
+                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   )
 }

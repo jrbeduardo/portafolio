@@ -1,4 +1,4 @@
-import { FaPython} from 'react-icons/fa';
+import { FaPython, FaDatabase} from 'react-icons/fa';
 import { MdSchool } from 'react-icons/md';
 import { SiPowerbi } from 'react-icons/si';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
@@ -9,7 +9,49 @@ import { useScroll } from '../hooks/useScroll';
 export const Experiencia = () => {
   useScroll();
   return (
-    <VerticalTimeline>
+    <div className="min-h-screen bg-white">
+      {/* Header Section */}
+      <div className="pt-20 pb-16 bg-gray-charcoal">
+        <div className="max-w-4xl mx-auto px-6">
+          <h1 className="text-4xl md:text-3xl font-bold text-center text-white mb-6">
+            Experiencia
+          </h1>
+          <p className="text-lg md:text-base text-center text-gray-300 max-w-2xl mx-auto">
+            Mi trayectoria profesional como Ingeniero de Datos, desarrollador y docente universitario.
+          </p>
+        </div>
+      </div>
+
+      {/* Timeline Section */}
+      <div className="py-16">
+        <VerticalTimeline>
+        <VerticalTimelineElement
+            className="font-bold vertical-timeline-element--education"
+            date="AGO 2024 - ENE 2025"
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+            icon={<MdSchool/>}
+        >
+            <h3 className="vertical-timeline-element-title">Ayudante de Profesor de Asignatura Nivel B</h3>
+            <h4 className="vertical-timeline-element-subtitle">Facultad de Ciencias UNAM</h4>
+            <p>
+            Asignaturas impartidas:
+            <ul className='list-disc'>
+                <li>Proyecto I Clasificación de Imágenes con redes neuronales, Grupo 6018, semestre 2025-I.</li>
+            </ul>
+            </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+            className="font-bold vertical-timeline-element--work"
+            date="MAR 2022 - OCT 2024"
+            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+            icon={<FaDatabase/>}
+        >
+            <h3 className="vertical-timeline-element-title">Ingeniero de Datos</h3>
+            <h4 className="vertical-timeline-element-subtitle">Coppel</h4>
+            <p>
+            Recolección de datos de diversas fuentes (bases de datos, CSV, APIs). Despliegue e integración de modelos matemáticos mediante desarrollo de aplicativos. Elaboración de arquitecturas para almacenar modelos analíticos en ambientes de desarrollo, pruebas y producción. Generación de procesos ETL y automatización, construyendo pipelines para procesamiento eficiente de datos.
+            </p>
+        </VerticalTimelineElement>
         <VerticalTimelineElement
             className="font-bold vertical-timeline-element--work"
             date="1/09/2021 - 29/10/2021"
@@ -88,6 +130,8 @@ export const Experiencia = () => {
             </p>
             
         </VerticalTimelineElement>
-    </VerticalTimeline>
+        </VerticalTimeline>
+      </div>
+    </div>
   )
 }

@@ -44,11 +44,11 @@ export const ContactForm = () => {
         = useForm(initialForm, validationsForm);
     return (
           <div className='w-screen flex flex-col font-raleway justify-center items-center'>
-            <div className='md:w-full w-5/6 p-10 shadow-xl bg-gray-50'>
-            <h2 className='text-4xl text-center font-semibold'>Escríbeme 📭</h2>
+            <div className='md:w-full w-5/6 p-10 shadow-xl bg-bg-light'>
+            <h2 className='text-4xl text-center font-semibold text-blue-corporate'>Escríbeme 📭</h2>
             <form onSubmit={handleSubmit}>
                 <input 
-                    className='w-full border-2 border-gray-600 rounded py-1 shadow-lg mt-5'
+                    className='w-full border-2 border-gray-light rounded py-1 shadow-lg mt-5'
                     type="text" 
                     name="name" 
                     placeholder="Escribe tu nombre" 
@@ -61,7 +61,7 @@ export const ContactForm = () => {
                 <input 
                     type="email" 
                     name="email" 
-                    className='w-full border-2 border-gray-600 rounded py-1 shadow-lg mt-5'
+                    className='w-full border-2 border-gray-light rounded py-1 shadow-lg mt-5'
                     placeholder="Escribe tu email" 
                     onBlur={handleBlur}
                     onChange ={handleChange}
@@ -72,7 +72,7 @@ export const ContactForm = () => {
                 <input 
                     type="text" 
                     name="subject"
-                    className='w-full border-2 border-gray-600 rounded py-1 shadow-lg mt-5' 
+                    className='w-full border-2 border-gray-light rounded py-1 shadow-lg mt-5' 
                     placeholder="Asunto a tratar" 
                     onBlur={handleBlur}
                     onChange ={handleChange}
@@ -81,7 +81,7 @@ export const ContactForm = () => {
                 />
                 {errors.subject && <p style={styles}>{errors.subject}</p>}
                 <textarea
-                    className='w-full border-2 border-gray-600 rounded py-1 shadow-lg mt-5'
+                    className='w-full border-2 border-gray-light rounded py-1 shadow-lg mt-5'
                     name="comments" 
                     col= "50"
                     rows="5"
@@ -95,7 +95,7 @@ export const ContactForm = () => {
                  <input 
                     type="submit" 
                     value = "enviar"
-                    className='bg-tomato text-2xl rounded text-white px-5 py-1 mb-5 mt-5'
+                    className='bg-blue-accent text-2xl rounded text-white px-5 py-1 mb-5 mt-5'
                 />
             </form>
             {loading && <Loader/>}

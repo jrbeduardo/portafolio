@@ -1,5 +1,17 @@
 export const projectsData =[
     {
+        title: "OLLIN IA",
+        image: "",
+        description: "Plataforma de inteligencia artificial diseñada para empoderar negocios mediante automatización de tareas, análisis de datos y chatbots. Soluciones IA a medida para optimizar procesos empresariales.",
+        link: "https://ollinia.com/"
+    },
+    {
+        title: "ANÁLISIS DE CÁNCER",
+        image: "",
+        description: "Proyecto de análisis de datos sobre cáncer utilizando técnicas de machine learning para predicción y clasificación. Implementado con Python, pandas y scikit-learn.",
+        link: "https://github.com/jrbeduardo/proyecto-cancer"
+    },
+    {
         title: "SPIDERKEPPER",
         image: "./spiderkeeper.svg",
         description: "Aplicación web para la administración de rastreadores web (spiders) desde un dashbord. Se puede ejecutar cada araña en el tiempo especificado por el usuario.",
