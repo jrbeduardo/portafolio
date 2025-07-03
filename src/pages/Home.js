@@ -108,7 +108,7 @@ export const Home = () => {
           Habilidades Técnicas
         </h2>
         
-        <div className="max-w-6xl mx-auto grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 gap-8">
           
           {/* Lenguajes de Programación */}
           <div className="bg-bg-light p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">

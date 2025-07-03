@@ -20,7 +20,7 @@ export const Projects = () => {
 
       {/* Projects Grid */}
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8">
           {projectsData.map(project => (
             <div key={project.title} className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="p-6">
