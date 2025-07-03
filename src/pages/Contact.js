@@ -24,14 +24,14 @@ export const Contact = () => {
             Información de Contacto
           </h2>
           
-          <div className="grid grid-cols-1 gap-8 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             <div className="flex flex-col items-center space-y-4 p-6 bg-gray-50 rounded-lg">
               <div className="bg-blue-accent p-4 rounded-full">
-                <FaEnvelope className="text-white text-2xl" />
+                <FaEnvelope className="text-white text-3xl" />
               </div>
               <div className="text-center">
-                <h3 className="font-semibold text-gray-900 mb-2">Email</h3>
-                <a href="mailto:jrbeduardo@gmail.com" className="text-blue-accent hover:underline">
+                <h3 className="font-semibold text-gray-900 mb-2 text-lg">Email</h3>
+                <a href="mailto:jrbeduardo@gmail.com" className="text-blue-accent hover:underline text-lg">
                   jrbeduardo@gmail.com
                 </a>
               </div>
@@ -39,11 +39,11 @@ export const Contact = () => {
 
             <div className="flex flex-col items-center space-y-4 p-6 bg-gray-50 rounded-lg">
               <div className="bg-blue-accent p-4 rounded-full">
-                <FaLinkedin className="text-white text-2xl" />
+                <FaLinkedin className="text-white text-3xl" />
               </div>
               <div className="text-center">
-                <h3 className="font-semibold text-gray-900 mb-2">LinkedIn</h3>
-                <a href="https://linkedin.com/in/jrbeduardo" target="_blank" rel="noopener noreferrer" className="text-blue-accent hover:underline">
+                <h3 className="font-semibold text-gray-900 mb-2 text-lg">LinkedIn</h3>
+                <a href="https://linkedin.com/in/jrbeduardo" target="_blank" rel="noopener noreferrer" className="text-blue-accent hover:underline text-lg">
                   linkedin.com/in/jrbeduardo
                 </a>
               </div>
@@ -51,11 +51,11 @@ export const Contact = () => {
 
             <div className="flex flex-col items-center space-y-4 p-6 bg-gray-50 rounded-lg">
               <div className="bg-blue-accent p-4 rounded-full">
-                <FaGithub className="text-white text-2xl" />
+                <FaGithub className="text-white text-3xl" />
               </div>
               <div className="text-center">
-                <h3 className="font-semibold text-gray-900 mb-2">GitHub</h3>
-                <a href="https://github.com/jrbeduardo" target="_blank" rel="noopener noreferrer" className="text-blue-accent hover:underline">
+                <h3 className="font-semibold text-gray-900 mb-2 text-lg">GitHub</h3>
+                <a href="https://github.com/jrbeduardo" target="_blank" rel="noopener noreferrer" className="text-blue-accent hover:underline text-lg">
                   github.com/jrbeduardo
                 </a>
               </div>
