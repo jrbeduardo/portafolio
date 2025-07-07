@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaDownload } from 'react-icons/fa';
 import { useScroll } from "../hooks/useScroll";
 
 export const Contact = () => {
@@ -70,11 +70,20 @@ export const Contact = () => {
             <p className="text-slate-600 mb-8 leading-relaxed">
               Descarga mi CV para conocer más detalles sobre mi experiencia y habilidades profesionales.
             </p>
-            <a href="https://drive.google.com/file/d/1s99GQpOPuuzaHB8D_85czUrPSnUTdgqn/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <button className='bg-slate-800 hover:bg-slate-900 text-white px-8 py-4 rounded-xl font-medium transition-all duration-200 hover:scale-105 text-lg'>
-                Descargar CV
-              </button>
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="https://drive.google.com/file/d/1bSd8yliyqZK8bH8osDhZNm1SepAoz4rf/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                <button className='bg-slate-800 hover:bg-slate-900 text-white px-8 py-4 rounded-xl font-medium transition-all duration-200 hover:scale-105 text-lg flex items-center gap-2'>
+                  <FaDownload className="text-sm" />
+                  CV Español
+                </button>
+              </a>
+              <a href="https://drive.google.com/file/d/1bSd8yliyqZK8bH8osDhZNm1SepAoz4rf/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                <button className='bg-slate-600 hover:bg-slate-700 text-white px-8 py-4 rounded-xl font-medium transition-all duration-200 hover:scale-105 text-lg flex items-center gap-2'>
+                  <FaDownload className="text-sm" />
+                  CV English
+                </button>
+              </a>
+            </div>
           </div>
 
           {/* Map */}
