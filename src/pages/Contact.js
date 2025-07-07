@@ -77,7 +77,7 @@ export const Contact = () => {
                   CV Español
                 </button>
               </a>
-              <a href="https://drive.google.com/file/d/1bSd8yliyqZK8bH8osDhZNm1SepAoz4rf/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1aeGB5uPYeSs2qHTzpTxTp5bZmKwED7OP/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <button className='bg-slate-600 hover:bg-slate-700 text-white px-8 py-4 rounded-xl font-medium transition-all duration-200 hover:scale-105 text-lg flex items-center gap-2'>
                   <FaDownload className="text-sm" />
                   CV English
