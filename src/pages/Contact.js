@@ -70,7 +70,7 @@ export const Contact = () => {
             <p className="text-slate-600 mb-8 leading-relaxed">
               Descarga mi CV para conocer más detalles sobre mi experiencia y habilidades profesionales.
             </p>
-            <div className="flex flex-col gap-4 justify-center">
+            <div className="flex flex-col gap-4 items-center">
               <a href="https://drive.google.com/file/d/1bSd8yliyqZK8bH8osDhZNm1SepAoz4rf/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                 <button className='bg-slate-800 hover:bg-slate-900 text-white px-8 py-4 rounded-xl font-medium transition-all duration-200 hover:scale-105 text-lg flex items-center gap-2'>
                   <FaDownload className="text-sm" />
