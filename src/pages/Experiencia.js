@@ -94,8 +94,11 @@ export const Experiencia = () => {
       {/* Header Section */}
       <section className="pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-light text-primary mb-6 px-2">
-            Experiencia
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-primary mb-6 leading-tight">
+            Mi{' '}
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              Experiencia
+            </span>
           </h1>
           <p className="text-base sm:text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed px-4">
             Mi trayectoria profesional como Ingeniero de Datos, desarrollador y docente universitario.

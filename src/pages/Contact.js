@@ -39,8 +39,11 @@ export const Contact = () => {
       {/* Header Section */}
       <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-light text-primary mb-6">
-            Contacto
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-primary mb-6 leading-tight">
+            Hablemos{' '}
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              juntos
+            </span>
           </h1>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
             ¿Tienes un proyecto en mente? Me encantaría colaborar contigo y discutir 
