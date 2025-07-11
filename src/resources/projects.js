@@ -9,9 +9,9 @@ export const projectsData =[
     {
         title: "Análisis de Cáncer de Mama",
         image: "",
-        description: "Proyecto de análisis de datos sobre cáncer de mama utilizando técnicas de machine learning para predicción y clasificación. Implementado con Python, pandas y scikit-learn para ayudar en el diagnóstico temprano.",
+        description: "Proyecto de clasificación de biopsias de cáncer de mama utilizando redes neuronales convolucionales (CNN) para diagnóstico automático. Implementado con TensorFlow para análisis de imágenes médicas y clasificación precisa de tejidos malignos y benignos.",
         link: "https://github.com/jrbeduardo/proyecto-cancer",
-        technologies: ["Python", "Pandas", "Scikit-learn", "Machine Learning", "Data Analysis"]
+        technologies: ["Python", "TensorFlow", "CNN", "Deep Learning", "Computer Vision", "Medical Imaging"]
     },
     {
         title: "Administración de Spiders",
@@ -24,36 +24,32 @@ export const projectsData =[
         title: "Best Time to Call",
         image: "",
         description: "Modelo predictivo para identificar los horarios óptimos de contacto en campañas telefónicas, basado en historiales de interacción. Procesamiento masivo con PySpark de toda la base de clientes de Coppel, mejorando la tasa de contacto efectivo del call center.",
-        link: "#",
         technologies: ["PySpark", "SQL"]
     },
     {
         title: "Predictor de Ventas",
         image: "",
         description: "Modelo para estimar las ventas proyectadas a tres años en nuevas tiendas de Coppel. Utiliza variables como formato de tienda, coordenadas geográficas y superficie de venta. Permite a la Dirección Inmobiliaria evaluar la viabilidad de nuevas ubicaciones.",
-        link: "#",
         technologies: ["Flask", "PostGIS", "Python", "SQL", "GeoPandas"]
     },
     {
         title: "Name Matching",
         image: "",
         description: "Microservicio diseñado para detectar coincidencias de nombres en listas negras utilizando la distancia de Levenshtein. Se integró en distintos puntos del sistema (alta de clientes, app móvil, pagos de remesas), agilizando la validación y mejorando la seguridad.",
-        link: "#",
         technologies: ["FastAPI", "Python", "Levenshtein", "Docker"]
     },
     {
         title: "Marketing ROI",
         image: "",
         description: "Análisis y modelado del retorno de inversión (ROI) de campañas publicitarias mediante Marketing Mix Modeling. Permitió optimizar la asignación presupuestal entre canales como televisión, medios digitales y prensa.",
-        link: "#",
         technologies: ["R", "Flask", "Tableau", "Python", "Plumber"]
     },
     {
         title: "ML Diabetes",
         image: "./diabetes.svg",
-        description: "Aplicación web que ayuda a calcular la probabilidad de tener diabetes del usuario, se toma como parámetros la glucosa (mg/dl), la edad y el índice de masa corporal (kg/m2) del usuario.",
+        description: "Aplicación web que predice la probabilidad de diabetes usando regresión logística. El modelo toma como parámetros la glucosa (mg/dl), edad e índice de masa corporal (kg/m2) del usuario para generar una predicción precisa basada en datos médicos.",
         link: "http://jrbeduardo.pythonanywhere.com/",
-        technologies: ["Python", "Flask", "Machine Learning", "HTML/CSS"]
+        technologies: ["Python", "Flask", "Scikit-learn", "Logistic Regression", "Machine Learning", "HTML/CSS"]
     },
     {
         title: "Movies React",

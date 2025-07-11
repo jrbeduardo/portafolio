@@ -92,35 +92,35 @@ export const Experiencia = () => {
   return (
     <div className="min-h-screen bg-transparent">
       {/* Header Section */}
-      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+      <section className="pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-light text-primary mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-light text-primary mb-6 px-2">
             Experiencia
           </h1>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed px-4">
             Mi trayectoria profesional como Ingeniero de Datos, desarrollador y docente universitario.
           </p>
         </div>
       </section>
 
       {/* Timeline Section */}
-      <section className="pb-16 px-4 sm:px-6 lg:px-8">
+      <section className="pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-primary/30"></div>
+            {/* Timeline line - Hidden on mobile */}
+            <div className="absolute left-4 sm:left-8 top-0 bottom-0 w-0.5 bg-primary/30 hidden sm:block"></div>
             
             {/* Timeline items */}
-            <div className="space-y-12">
+            <div className="space-y-8 sm:space-y-12">
               {experiences.map((exp, index) => (
                 <div key={exp.id} className="relative flex items-start">
-                  {/* Timeline dot */}
-                  <div className={`absolute left-6 w-4 h-4 rounded-full border-2 border-blue-steel ${
+                  {/* Timeline dot - Hidden on mobile */}
+                  <div className={`absolute left-2 sm:left-6 w-4 h-4 rounded-full border-2 border-blue-steel ${
                     exp.type === 'work' ? 'bg-primary' : 'bg-text-secondary'
-                  } shadow-sm`}></div>
+                  } shadow-sm hidden sm:block`}></div>
                   
                   {/* Content */}
-                  <div className="ml-16 bg-blue-steel/50 border border-primary/20 rounded-lg p-6 shadow-sm hover:shadow-md hover:shadow-primary/20 transition-all duration-200 backdrop-blur-sm">
+                  <div className="w-full sm:ml-16 bg-blue-steel/50 border border-primary/20 rounded-lg p-4 sm:p-6 shadow-sm hover:shadow-md hover:shadow-primary/20 transition-all duration-200 backdrop-blur-sm">
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
                       <div className="flex-1">
                         <div className="mb-2">

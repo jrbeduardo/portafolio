@@ -30,10 +30,10 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 min-w-0">
             <NavLink 
               to="/"
-              className="text-xl font-semibold text-text-primary hover:text-primary transition-colors duration-200"
+              className="text-lg sm:text-xl font-semibold text-text-primary hover:text-primary transition-colors duration-200 truncate"
             >
               Eduardo Barrios
             </NavLink>

@@ -120,11 +120,11 @@ export const Contact = () => {
           </div>
           
           <div className="bg-blue-steel/50 rounded-lg border border-primary/20 overflow-hidden shadow-sm backdrop-blur-sm">
-            <div className="aspect-w-16 aspect-h-9">
+            <div className="w-full h-64 sm:h-80 lg:h-96">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240865.66325882063!2d-99.41543239074369!3d19.390519011860457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1648584726000!5m2!1ses!2smx"
                 width="100%"
-                height="400"
+                height="100%"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"

@@ -18,39 +18,39 @@ export const Home = () => {
   return (
     <div className="min-h-screen bg-transparent">
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+      <section className="pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <div className="w-48 h-60 mx-auto mb-6 relative">
+            <div className="w-40 h-48 sm:w-48 sm:h-60 mx-auto mb-6 relative">
               <img 
                 src="/fot.png" 
                 alt="Eduardo Barrios" 
                 className="w-full h-full object-cover rounded-lg shadow-sm"
               />
             </div>
-            <h1 className="text-4xl sm:text-5xl font-light text-text-primary mb-4">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-light text-text-primary mb-4 px-2">
               Eduardo Barrios
             </h1>
-            <p className="text-xl text-primary mb-6">
+            <p className="text-lg sm:text-xl text-primary mb-6 px-2">
               Ingeniero de Datos & Desarrollador Full Stack
             </p>
-            <p className="text-base text-text-secondary max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base text-text-secondary max-w-2xl mx-auto leading-relaxed px-4">
               Ingeniero de Datos con formación en Matemáticas (UNAM) y más de 3 años de experiencia 
               en retail. Especialista en arquitectura de datos, automatización de pipelines ETL 
               y despliegue de modelos en producción.
             </p>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mb-12 px-4">
             <button 
               onClick={() => setIsCVModalOpen(true)}
-              className="btn-primary hover-gradient"
+              className="btn-primary hover-gradient w-full sm:w-auto min-w-[140px]"
             >
               Descargar CV
             </button>
             <a 
               href="mailto:jrbeduardo@gmail.com"
-              className="inline-flex items-center px-6 py-3 text-sm font-medium text-primary border border-primary rounded-lg hover:bg-primary hover:text-dark-blue transition-colors duration-200"
+              className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-primary border border-primary rounded-lg hover:bg-primary hover:text-dark-blue transition-colors duration-200 w-full sm:w-auto min-w-[140px]"
             >
               Contactar
             </a>
@@ -86,22 +86,22 @@ export const Home = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-light text-primary mb-12 text-center">
+          <h2 className="text-2xl sm:text-3xl font-light text-primary mb-8 sm:mb-12 text-center px-4">
             Habilidades Técnicas
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {skills.map((skillGroup, index) => (
-              <div key={index} className="space-y-4">
-                <h3 className="text-lg font-medium text-text-primary">
+              <div key={index} className="space-y-4 px-2">
+                <h3 className="text-base sm:text-lg font-medium text-text-primary text-center sm:text-left">
                   {skillGroup.category}
                 </h3>
-                <div className="space-y-2">
+                <div className="space-y-2 flex flex-wrap justify-center sm:justify-start gap-2">
                   {skillGroup.items.map((skill, skillIndex) => (
                     <span 
                       key={skillIndex}
-                      className="inline-block px-3 py-1 text-sm text-primary bg-primary/20 rounded-full mr-2 mb-2 border border-primary/30 hover:bg-primary/30 transition-colors duration-200"
+                      className="inline-block px-2 sm:px-3 py-1 text-xs sm:text-sm text-primary bg-primary/20 rounded-full border border-primary/30 hover:bg-primary/30 transition-colors duration-200"
                     >
                       {skill}
                     </span>
