@@ -1,126 +1,143 @@
-import { projectsData } from '../resources/projects'
+import React from "react";
+import { projectsData } from '../resources/projects';
 import { useScroll } from "../hooks/useScroll";
 
 export const Projects = () => {
   useScroll();
+
+  const openProject = (link) => {
+    window.open(link, '_blank', 'noopener,noreferrer');
+  };
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-transparent">
       {/* Header Section */}
-      <div className="pt-20 pb-24 bg-gradient-to-br from-slate-900 to-slate-800">
-        <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-4xl md:text-3xl font-light text-center text-white mb-6">
+      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl sm:text-5xl font-light text-primary mb-6">
             Proyectos
           </h1>
-          <p className="text-lg md:text-base text-center text-slate-300 max-w-2xl mx-auto font-light">
+          <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
             Una selección de proyectos que demuestran mi experiencia en desarrollo full-stack, 
             análisis de datos y soluciones tecnológicas.
           </p>
         </div>
-      </div>
+      </section>
 
       {/* Projects Grid */}
-      <div className="max-w-6xl mx-auto px-6 py-24">
-        <div className="grid grid-cols-1 gap-12">
-          {projectsData.map((project, index) => {
-            // Define color themes for each project
-            const colorThemes = [
-              {
-                bg: 'bg-gradient-to-br from-cyan-50 to-blue-100',
-                border: 'border-cyan-200',
-                accent: 'bg-cyan-500',
-                titleColor: 'text-cyan-900',
-                descColor: 'text-cyan-700',
-                btn: 'text-cyan-600 hover:text-cyan-800 border-cyan-600 hover:border-cyan-800 hover:bg-cyan-50'
-              },
-              {
-                bg: 'bg-gradient-to-br from-orange-50 to-red-100',
-                border: 'border-orange-200',
-                accent: 'bg-orange-500',
-                titleColor: 'text-orange-900',
-                descColor: 'text-orange-700',
-                btn: 'text-orange-600 hover:text-orange-800 border-orange-600 hover:border-orange-800 hover:bg-orange-50'
-              },
-              {
-                bg: 'bg-gradient-to-br from-green-50 to-emerald-100',
-                border: 'border-green-200',
-                accent: 'bg-green-500',
-                titleColor: 'text-green-900',
-                descColor: 'text-green-700',
-                btn: 'text-green-600 hover:text-green-800 border-green-600 hover:border-green-800 hover:bg-green-50'
-              },
-              {
-                bg: 'bg-gradient-to-br from-indigo-50 to-purple-100',
-                border: 'border-indigo-200',
-                accent: 'bg-indigo-500',
-                titleColor: 'text-indigo-900',
-                descColor: 'text-indigo-700',
-                btn: 'text-indigo-600 hover:text-indigo-800 border-indigo-600 hover:border-indigo-800 hover:bg-indigo-50'
-              },
-              {
-                bg: 'bg-gradient-to-br from-pink-50 to-rose-100',
-                border: 'border-pink-200',
-                accent: 'bg-pink-500',
-                titleColor: 'text-pink-900',
-                descColor: 'text-pink-700',
-                btn: 'text-pink-600 hover:text-pink-800 border-pink-600 hover:border-pink-800 hover:bg-pink-50'
-              },
-              {
-                bg: 'bg-gradient-to-br from-teal-50 to-cyan-100',
-                border: 'border-teal-200',
-                accent: 'bg-teal-500',
-                titleColor: 'text-teal-900',
-                descColor: 'text-teal-700',
-                btn: 'text-teal-600 hover:text-teal-800 border-teal-600 hover:border-teal-800 hover:bg-teal-50'
-              },
-              {
-                bg: 'bg-gradient-to-br from-amber-50 to-yellow-100',
-                border: 'border-amber-200',
-                accent: 'bg-amber-500',
-                titleColor: 'text-amber-900',
-                descColor: 'text-amber-700',
-                btn: 'text-amber-600 hover:text-amber-800 border-amber-600 hover:border-amber-800 hover:bg-amber-50'
-              }
-            ];
-            
-            const theme = colorThemes[index % colorThemes.length];
-            
-            return (
+      <section className="pb-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projectsData.map((project, index) => (
               <div 
-                key={project.title} 
-                className={`${theme.bg} border ${theme.border} rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1`}
+                key={index}
+                className="group bg-blue-steel/50 border border-primary/20 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-primary/20 hover:border-primary/40 transition-all duration-300 backdrop-blur-sm"
               >
-                <div className="relative">
-                  <div className={`absolute top-0 left-0 w-full h-1 ${theme.accent} rounded-t-xl`}></div>
-                  <div className="p-8">
-                    <div className="flex items-start gap-4">
-                      <div className={`w-3 h-3 ${theme.accent} rounded-full mt-2 flex-shrink-0`}></div>
-                      <div className="flex-1">
-                        <h3 className={`text-2xl font-bold ${theme.titleColor} mb-4`}>
-                          {project.title}
-                        </h3>
-                        <p className={`${theme.descColor} text-base leading-relaxed mb-8`}>
-                          {project.description}
-                        </p>
-                        <div className="flex justify-end">
-                          <button 
-                            onClick={() => window.open(project.link, '_blank')}
-                            className={`inline-flex items-center px-6 py-3 text-sm font-semibold ${theme.btn} border-2 rounded-lg transition-all duration-200 hover:scale-105`}
-                          >
-                            Ver Proyecto
-                            <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                            </svg>
-                          </button>
+                <div className="p-6">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors duration-200">
+                        {project.title}
+                      </h3>
+                      <p className="text-text-secondary text-sm leading-relaxed mb-3">
+                        {project.description}
+                      </p>
+                      {project.technologies && (
+                        <div className="flex flex-wrap gap-1 mt-2">
+                          {project.technologies.map((tech, techIndex) => (
+                            <span 
+                              key={techIndex}
+                              className="inline-block px-2 py-1 text-xs text-primary bg-primary/20 rounded border border-primary/30"
+                            >
+                              {tech}
+                            </span>
+                          ))}
                         </div>
-                      </div>
+                      )}
                     </div>
+                  </div>
+                  
+                  <div className="flex items-center justify-between pt-4">
+                    <button
+                      onClick={() => openProject(project.link)}
+                      className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-200"
+                    >
+                      Ver proyecto
+                      <svg 
+                        className="ml-1 w-4 h-4" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round" 
+                          strokeWidth={2} 
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
+                        />
+                      </svg>
+                    </button>
+                    
+                    <div className="w-2 h-2 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
                   </div>
                 </div>
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* Technologies Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-bg-light-section/5 backdrop-blur-sm">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-light text-primary mb-8">
+            Tecnologías Utilizadas
+          </h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              'Python', 'PySpark', 'Flask', 'Django', 'FastAPI', 'React', 'JavaScript', 
+              'Machine Learning', 'PostgreSQL', 'SQL', 'Docker', 'PostGIS', 'GeoPandas',
+              'R', 'Tableau', 'Selenium', 'Scrapy', 'APIs', 'Web Scraping', 'Data Analysis',
+              'Pandas', 'Scikit-learn', 'HTML/CSS', 'SQLite', 'Levenshtein'
+            ].map((tech, index) => (
+              <span 
+                key={index}
+                className="px-4 py-2 text-sm text-text-secondary bg-blue-steel/50 rounded-full border border-primary/30 hover:border-primary hover:text-primary transition-colors duration-200"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-light text-primary mb-6">
+            ¿Tienes un proyecto en mente?
+          </h2>
+          <p className="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+            Me encantaría colaborar contigo en tu próximo proyecto de datos o desarrollo web.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a 
+              href="mailto:jrbeduardo@gmail.com"
+              className="btn-primary hover-gradient"
+            >
+              Iniciar conversación
+            </a>
+            <a 
+              href="https://github.com/jrbeduardo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 text-sm font-medium text-primary border border-primary rounded-lg hover:bg-primary hover:text-dark-blue transition-colors duration-200"
+            >
+              Ver más en GitHub
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
-  )
-}
+  );
+};

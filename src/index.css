@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 html{
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -17,4 +19,33 @@ html{
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Dark gradient background */
+body {
+  background: linear-gradient(to bottom right, #0B132B, #1C2541);
+  min-height: 100vh;
+  color: #F5F5F5;
+}
+
+/* Hover effects for interactive elements */
+.hover-gradient:hover {
+  background: linear-gradient(to right, #5BC0BE, #3A506B);
+  transition: all 0.3s ease;
+}
+
+/* Button styles with neon accent */
+.btn-primary {
+  background: #5BC0BE;
+  color: #0B132B;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #5BC0BE, #3A506B);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(91, 192, 190, 0.3);
+}
 
