@@ -169,6 +169,7 @@ export const Experiencia = () => {
         </div>
       </section>
 
+
       {/* Skills Summary */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-bg-light-section/10 backdrop-blur-sm">
         <div className="max-w-4xl mx-auto text-center">

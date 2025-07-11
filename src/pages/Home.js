@@ -163,18 +163,67 @@ export const Home = () => {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {skills.map((skillGroup, index) => (
-              <div key={index} className="space-y-4 px-2">
-                <h3 className="text-base sm:text-lg font-medium text-text-primary text-center sm:text-left">
-                  {skillGroup.category}
-                </h3>
-                <div className="space-y-2 flex flex-wrap justify-center sm:justify-start gap-2">
+              <div key={index} className="bg-blue-steel/30 backdrop-blur-sm border border-primary/20 rounded-xl p-6 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:scale-105 group">
+                {/* Category Header */}
+                <div className="mb-6">
+                  <div className="flex items-center gap-3 mb-2">
+                    {/* Icon based on category */}
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center group-hover:from-primary/30 group-hover:to-secondary/30 transition-all duration-300">
+                      {index === 0 && ( // Lenguajes de Programación
+                        <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                      )}
+                      {index === 1 && ( // Big Data & ETL
+                        <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
+                        </svg>
+                      )}
+                      {index === 2 && ( // Machine Learning
+                        <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                      )}
+                      {index === 3 && ( // Desarrollo Web
+                        <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                        </svg>
+                      )}
+                      {index === 4 && ( // Bases de Datos
+                        <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                        </svg>
+                      )}
+                      {index === 5 && ( // DevOps
+                        <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                      )}
+                    </div>
+                    <h3 className="text-base sm:text-lg font-semibold text-text-primary group-hover:text-primary transition-colors duration-300">
+                      {skillGroup.category}
+                    </h3>
+                  </div>
+                  <div className="w-12 h-0.5 bg-gradient-to-r from-primary to-secondary group-hover:w-16 transition-all duration-300"></div>
+                </div>
+                
+                {/* Skills Grid */}
+                <div className="grid grid-cols-2 gap-2">
                   {skillGroup.items.map((skill, skillIndex) => (
-                    <span 
+                    <div 
                       key={skillIndex}
-                      className="inline-block px-2 sm:px-3 py-1 text-xs sm:text-sm text-primary bg-primary/20 rounded-full border border-primary/30 hover:bg-primary/30 transition-colors duration-200"
+                      className="relative overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20 rounded-lg p-3 hover:from-primary/20 hover:to-secondary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 group-hover:shadow-md"
                     >
-                      {skill}
-                    </span>
+                      {/* Animated background gradient */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                      
+                      <div className="relative z-10">
+                        <span className="text-xs sm:text-sm font-medium text-text-primary hover:text-primary transition-colors duration-300 block text-center">
+                          {skill}
+                        </span>
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -184,32 +233,159 @@ export const Home = () => {
       </section>
 
       {/* Experience Highlight */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-bg-light-section/5 backdrop-blur-sm">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-light text-primary mb-8">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/5 to-secondary/5 backdrop-blur-sm">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-light text-primary mb-12 text-center">
             Experiencia Destacada
           </h2>
-          <div className="bg-blue-steel/50 rounded-lg p-8 shadow-sm border border-primary/20 backdrop-blur-sm hover:shadow-lg hover:shadow-primary/20 transition-all duration-200">
-            <div className="flex items-center justify-center mb-6">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center border border-primary/30">
-                <img 
-                  src="Coppel_logo_(2025).png" 
-                  alt="Coppel Logo" 
-                  className="w-10 h-10 object-contain"
-                />
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Coppel Experience */}
+            <div className="bg-blue-steel/50 border border-primary/20 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 backdrop-blur-sm">
+              <div className="flex flex-col items-start gap-6">
+                {/* Logo */}
+                <div className="flex items-center gap-4">
+                  <div className="flex-shrink-0 w-16 h-16 bg-white/90 rounded-lg p-3 flex items-center justify-center shadow-sm">
+                    <img 
+                      src="Coppel_logo_(2025).png" 
+                      alt="Coppel Logo" 
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-semibold text-text-primary">
+                      Ingeniero de Datos
+                    </h3>
+                    <p className="text-lg text-primary font-medium">
+                      Grupo Coppel
+                    </p>
+                    <p className="text-sm text-text-secondary/70 font-medium">
+                      Marzo 2022 - Octubre 2024
+                    </p>
+                  </div>
+                </div>
+                
+                {/* Content */}
+                <div className="w-full">
+                  <div className="mb-4">
+                    <h4 className="text-lg font-medium text-text-primary mb-3">
+                      Responsabilidades Principales
+                    </h4>
+                    <ul className="space-y-2">
+                      <li className="text-sm text-text-secondary flex items-start">
+                        <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Recolección y procesamiento de datos de múltiples fuentes: bases de datos, APIs web, archivos CSV y sistemas legacy
+                      </li>
+                      <li className="text-sm text-text-secondary flex items-start">
+                        <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Despliegue e integración de modelos matemáticos en producción con Python y PySpark
+                      </li>
+                      <li className="text-sm text-text-secondary flex items-start">
+                        <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Desarrollo de arquitecturas de datos escalables para almacenar modelos analíticos en ambientes de desarrollo, pruebas y producción
+                      </li>
+                      <li className="text-sm text-text-secondary flex items-start">
+                        <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Construcción de pipelines ETL automatizados con Apache Airflow para optimizar flujos de datos
+                      </li>
+                      <li className="text-sm text-text-secondary flex items-start">
+                        <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Colaboración con equipos de análisis para implementar soluciones de inteligencia de negocios
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div className="mb-4">
+                    <h4 className="text-lg font-medium text-text-primary mb-3">
+                      Logros Destacados
+                    </h4>
+                    <ul className="space-y-2">
+                      <li className="text-sm text-text-secondary flex items-start">
+                        <span className="w-1.5 h-1.5 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Procesamiento de más de 10M de registros diarios mejorando la eficiencia operativa
+                      </li>
+                      <li className="text-sm text-text-secondary flex items-start">
+                        <span className="w-1.5 h-1.5 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Reducción del 40% en tiempo de procesamiento de datos mediante optimización de pipelines
+                      </li>
+                      <li className="text-sm text-text-secondary flex items-start">
+                        <span className="w-1.5 h-1.5 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Implementación exitosa de 5+ modelos predictivos en producción
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-            <h3 className="text-xl font-semibold text-text-primary mb-2">
-              Ingeniero de Datos en Grupo Coppel
-            </h3>
-            <p className="text-text-secondary/70 mb-4">
-              Marzo 2022 - Octubre 2024
-            </p>
-            <p className="text-text-secondary leading-relaxed">
-              Recolección de datos de diversas fuentes, despliegue e integración de modelos matemáticos, 
-              elaboración de arquitecturas para almacenar modelos analíticos en ambientes de desarrollo, 
-              pruebas y producción, y generación de procesos ETL automatizados.
-            </p>
+
+            {/* UNAM Experience */}
+            <div className="bg-blue-steel/50 border border-primary/20 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 backdrop-blur-sm">
+              <div className="flex flex-col items-start gap-6">
+                {/* Logo */}
+                <div className="flex items-center gap-4">
+                  <div className="flex-shrink-0 w-16 h-16 bg-white/90 rounded-lg p-3 flex items-center justify-center shadow-sm">
+                    <img 
+                      src="/facultad-ciencias-unam-logo.svg" 
+                      alt="Facultad de Ciencias UNAM" 
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-semibold text-text-primary">
+                      Proyecto I - CNN
+                    </h3>
+                    <p className="text-lg text-primary font-medium">
+                      Facultad de Ciencias UNAM
+                    </p>
+                    <p className="text-sm text-text-secondary/70 font-medium">
+                      Semestre 2025-I • Grupo 6018
+                    </p>
+                  </div>
+                </div>
+                
+                {/* Content */}
+                <div className="w-full">
+                  <div className="mb-4">
+                    <h4 className="text-lg font-medium text-text-primary mb-3">
+                      Descripción del Curso
+                    </h4>
+                    <p className="text-text-secondary leading-relaxed mb-4">
+                      Curso avanzado enfocado en el desarrollo de sistemas de clasificación de imágenes utilizando 
+                      redes neuronales profundas. Los estudiantes aprenden a implementar, entrenar y optimizar 
+                      modelos de deep learning para reconocimiento de patrones visuales.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-lg font-medium text-text-primary mb-3">
+                      Objetivos del Curso
+                    </h4>
+                    <ul className="space-y-2">
+                      <li className="text-sm text-text-secondary flex items-start">
+                        <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Implementar arquitecturas CNN para clasificación de imágenes
+                      </li>
+                      <li className="text-sm text-text-secondary flex items-start">
+                        <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Aplicar técnicas de preprocesamiento y data augmentation
+                      </li>
+                      <li className="text-sm text-text-secondary flex items-start">
+                        <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Desarrollar proyectos con TensorFlow/Keras
+                      </li>
+                      <li className="text-sm text-text-secondary flex items-start">
+                        <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Evaluar y optimizar modelos mediante métricas de rendimiento
+                      </li>
+                      <li className="text-sm text-text-secondary flex items-start">
+                        <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Presentar resultados de manera profesional
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
