@@ -323,7 +323,7 @@ export const Home = () => {
               <div className="flex flex-col items-start gap-6">
                 {/* Logo */}
                 <div className="flex items-center gap-4">
-                  <div className="flex-shrink-0 w-16 h-16 bg-white/90 rounded-lg p-3 flex items-center justify-center shadow-sm">
+                  <div className="flex-shrink-0 w-20 h-20 bg-white/90 rounded-lg p-3 flex items-center justify-center shadow-sm">
                     <img 
                       src="/facultad-ciencias-unam-logo.svg" 
                       alt="Facultad de Ciencias UNAM" 
