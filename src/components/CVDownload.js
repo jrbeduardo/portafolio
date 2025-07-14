@@ -5,7 +5,7 @@ export const CVDownload = ({ isOpen, onClose }) => {
 
   const cvLinks = {
     es: "https://drive.google.com/file/d/1bSd8yliyqZK8bH8osDhZNm1SepAoz4rf/view?usp=drive_link",
-    en: "https://drive.google.com/file/d/1aeGB5uPYeSs2qHTzpTxTp5bZmKwED7OP/view?usp=sharing"
+    en: "https://drive.google.com/file/d/1aeGB5uPYeSs2qHTzpTxTp5bZmKwED7OP/view?usp=drive_link"
   };
 
   const handleDownload = (language) => {
