@@ -31,7 +31,7 @@ export const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0 min-w-0">
             <NavLink 
-              to="/"
+              to="/manifiesto"
               className="text-lg sm:text-xl font-bold text-text-primary hover:text-primary transition-all duration-300 truncate hover:scale-105 bg-gradient-to-r from-primary to-secondary bg-clip-text hover:text-transparent"
             >
               Eduardo Barrios
